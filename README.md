@@ -1,5 +1,7 @@
 # BettaDayz RP — BettaBukz Edition v1
 
+[![Deploy Pages](https://github.com/skebbanhb-ai/bettadayz-rp/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/skebbanhb-ai/bettadayz-rp/actions/workflows/deploy-pages.yml)
+
 This repository contains two parts:
 
 1. **Full local game** — Node.js, WebSockets, SQLite, Electron desktop, Android/iOS Capacitor setup.
