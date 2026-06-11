@@ -17,12 +17,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Validate public folder exists
-        run: |
-          test -f public/index.html
+      - name: Validate public folder
+        run: test -f public/index.html
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
