@@ -1,0 +1,3746 @@
+{
+  "meta": {
+    "city": "Norfolk, VA-inspired fictional districts",
+    "currency": "BettaBukz",
+    "brandInspirations": [
+      "BettaKarts luxury arena racing",
+      "VIP / Vehicles / Housing / Pets",
+      "Daily Rewards"
+    ],
+    "counts": {
+      "vehicles": 100,
+      "homes": 50,
+      "shops": 20,
+      "pets": 30,
+      "memberTiers": 6,
+      "exclusive": 20,
+      "races": 10
+    }
+  },
+  "districts": [
+    {
+      "id": "downtown_granby",
+      "name": "Granby Row"
+    },
+    {
+      "id": "neon_arts",
+      "name": "NEON Arts"
+    },
+    {
+      "id": "church_attucks",
+      "name": "Attucks Quarter"
+    },
+    {
+      "id": "waterside",
+      "name": "Waterside"
+    },
+    {
+      "id": "ghent",
+      "name": "Ghent"
+    },
+    {
+      "id": "ocean_view",
+      "name": "Ocean View"
+    },
+    {
+      "id": "military_hwy",
+      "name": "Military Highway"
+    },
+    {
+      "id": "ward_corner",
+      "name": "Wards Corner"
+    },
+    {
+      "id": "odu_lambert",
+      "name": "Lambert Point"
+    },
+    {
+      "id": "berkley_bridge",
+      "name": "Berkley Bridge"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "car_001",
+      "name": "Granby Cruiser Sedan 001",
+      "class": "sedan",
+      "price": 1800,
+      "bettabukzPrice": 0,
+      "district": "downtown_granby",
+      "speed": 4,
+      "style": 3,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_002",
+      "name": "NEON Street Tuner 002",
+      "class": "tuner",
+      "price": 6875,
+      "bettabukzPrice": 0,
+      "district": "neon_arts",
+      "speed": 5,
+      "style": 4,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_003",
+      "name": "Attucks Lowrider 003",
+      "class": "lowrider",
+      "price": 10250,
+      "bettabukzPrice": 0,
+      "district": "church_attucks",
+      "speed": 6,
+      "style": 5,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_004",
+      "name": "Waterside Luxury Coupe 004",
+      "class": "luxury",
+      "price": 29125,
+      "bettabukzPrice": 155,
+      "district": "waterside",
+      "speed": 7,
+      "style": 6,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_005",
+      "name": "Ghent Track SUV 005",
+      "class": "performance_suv",
+      "price": 63500,
+      "bettabukzPrice": 0,
+      "district": "ghent",
+      "speed": 8,
+      "style": 7,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_006",
+      "name": "Ocean View Drop-Top 006",
+      "class": "convertible",
+      "price": 49875,
+      "bettabukzPrice": 0,
+      "district": "ocean_view",
+      "speed": 9,
+      "style": 8,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_007",
+      "name": "Military Hwy Exotic GT 007",
+      "class": "exotic",
+      "price": 87250,
+      "bettabukzPrice": 560,
+      "district": "military_hwy",
+      "speed": 10,
+      "style": 9,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_008",
+      "name": "757 Art Car 008",
+      "class": "custom",
+      "price": 15125,
+      "bettabukzPrice": 0,
+      "district": "ward_corner",
+      "speed": 11,
+      "style": 10,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_009",
+      "name": "Harbor VIP Sprinter 009",
+      "class": "van",
+      "price": 45000,
+      "bettabukzPrice": 0,
+      "district": "odu_lambert",
+      "speed": 12,
+      "style": 11,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_010",
+      "name": "East Beach Harbor EV 010",
+      "class": "electric",
+      "price": 39375,
+      "bettabukzPrice": 190,
+      "district": "berkley_bridge",
+      "speed": 13,
+      "style": 12,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_011",
+      "name": "Church Street Cruiser Sedan 011",
+      "class": "sedan",
+      "price": 5550,
+      "bettabukzPrice": 0,
+      "district": "downtown_granby",
+      "speed": 14,
+      "style": 13,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_012",
+      "name": "Tidewater Street Tuner 012",
+      "class": "tuner",
+      "price": 10625,
+      "bettabukzPrice": 0,
+      "district": "neon_arts",
+      "speed": 15,
+      "style": 14,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_013",
+      "name": "Granby Lowrider 013",
+      "class": "lowrider",
+      "price": 14000,
+      "bettabukzPrice": 80,
+      "district": "church_attucks",
+      "speed": 4,
+      "style": 15,
+      "storage": 3,
+      "tierRequired": "silver"
+    },
+    {
+      "id": "car_014",
+      "name": "NEON Luxury Coupe 014",
+      "class": "luxury",
+      "price": 32875,
+      "bettabukzPrice": 0,
+      "district": "waterside",
+      "speed": 5,
+      "style": 16,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_015",
+      "name": "Attucks Track SUV 015",
+      "class": "performance_suv",
+      "price": 67250,
+      "bettabukzPrice": 0,
+      "district": "ghent",
+      "speed": 6,
+      "style": 17,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_016",
+      "name": "Waterside Drop-Top 016",
+      "class": "convertible",
+      "price": 53625,
+      "bettabukzPrice": 290,
+      "district": "ocean_view",
+      "speed": 7,
+      "style": 18,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_017",
+      "name": "Ghent Exotic GT 017",
+      "class": "exotic",
+      "price": 91000,
+      "bettabukzPrice": 0,
+      "district": "military_hwy",
+      "speed": 8,
+      "style": 19,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_018",
+      "name": "Ocean View Art Car 018",
+      "class": "custom",
+      "price": 18875,
+      "bettabukzPrice": 0,
+      "district": "ward_corner",
+      "speed": 9,
+      "style": 20,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_019",
+      "name": "Military Hwy VIP Sprinter 019",
+      "class": "van",
+      "price": 48750,
+      "bettabukzPrice": 295,
+      "district": "odu_lambert",
+      "speed": 10,
+      "style": 3,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_020",
+      "name": "757 Harbor EV 020",
+      "class": "electric",
+      "price": 43125,
+      "bettabukzPrice": 0,
+      "district": "berkley_bridge",
+      "speed": 11,
+      "style": 4,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_021",
+      "name": "Harbor Cruiser Sedan 021",
+      "class": "sedan",
+      "price": 9300,
+      "bettabukzPrice": 0,
+      "district": "downtown_granby",
+      "speed": 12,
+      "style": 5,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_022",
+      "name": "East Beach Street Tuner 022",
+      "class": "tuner",
+      "price": 14375,
+      "bettabukzPrice": 75,
+      "district": "neon_arts",
+      "speed": 13,
+      "style": 6,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_023",
+      "name": "Church Street Lowrider 023",
+      "class": "lowrider",
+      "price": 17750,
+      "bettabukzPrice": 0,
+      "district": "church_attucks",
+      "speed": 14,
+      "style": 7,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_024",
+      "name": "Tidewater Luxury Coupe 024",
+      "class": "luxury",
+      "price": 36625,
+      "bettabukzPrice": 0,
+      "district": "waterside",
+      "speed": 15,
+      "style": 8,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_025",
+      "name": "Granby Track SUV 025",
+      "class": "performance_suv",
+      "price": 71000,
+      "bettabukzPrice": 300,
+      "district": "ghent",
+      "speed": 4,
+      "style": 9,
+      "storage": 5,
+      "tierRequired": "platinum"
+    },
+    {
+      "id": "car_026",
+      "name": "NEON Drop-Top 026",
+      "class": "convertible",
+      "price": 57375,
+      "bettabukzPrice": 0,
+      "district": "ocean_view",
+      "speed": 5,
+      "style": 10,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_027",
+      "name": "Attucks Exotic GT 027",
+      "class": "exotic",
+      "price": 94750,
+      "bettabukzPrice": 0,
+      "district": "military_hwy",
+      "speed": 6,
+      "style": 11,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_028",
+      "name": "Waterside Art Car 028",
+      "class": "custom",
+      "price": 22625,
+      "bettabukzPrice": 105,
+      "district": "ward_corner",
+      "speed": 7,
+      "style": 12,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_029",
+      "name": "Ghent VIP Sprinter 029",
+      "class": "van",
+      "price": 52500,
+      "bettabukzPrice": 0,
+      "district": "odu_lambert",
+      "speed": 8,
+      "style": 13,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_030",
+      "name": "Ocean View Harbor EV 030",
+      "class": "electric",
+      "price": 46875,
+      "bettabukzPrice": 0,
+      "district": "berkley_bridge",
+      "speed": 9,
+      "style": 14,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_031",
+      "name": "Military Hwy Cruiser Sedan 031",
+      "class": "sedan",
+      "price": 13050,
+      "bettabukzPrice": 60,
+      "district": "downtown_granby",
+      "speed": 10,
+      "style": 15,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_032",
+      "name": "757 Street Tuner 032",
+      "class": "tuner",
+      "price": 18125,
+      "bettabukzPrice": 0,
+      "district": "neon_arts",
+      "speed": 11,
+      "style": 16,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_033",
+      "name": "Harbor Lowrider 033",
+      "class": "lowrider",
+      "price": 21500,
+      "bettabukzPrice": 0,
+      "district": "church_attucks",
+      "speed": 12,
+      "style": 17,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_034",
+      "name": "East Beach Luxury Coupe 034",
+      "class": "luxury",
+      "price": 40375,
+      "bettabukzPrice": 135,
+      "district": "waterside",
+      "speed": 13,
+      "style": 18,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_035",
+      "name": "Church Street Track SUV 035",
+      "class": "performance_suv",
+      "price": 74750,
+      "bettabukzPrice": 0,
+      "district": "ghent",
+      "speed": 14,
+      "style": 19,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_036",
+      "name": "Tidewater Drop-Top 036",
+      "class": "convertible",
+      "price": 61125,
+      "bettabukzPrice": 0,
+      "district": "ocean_view",
+      "speed": 15,
+      "style": 20,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_037",
+      "name": "Granby Exotic GT 037",
+      "class": "exotic",
+      "price": 98500,
+      "bettabukzPrice": 540,
+      "district": "military_hwy",
+      "speed": 4,
+      "style": 3,
+      "storage": 2,
+      "tierRequired": "bronze"
+    },
+    {
+      "id": "car_038",
+      "name": "NEON Art Car 038",
+      "class": "custom",
+      "price": 26375,
+      "bettabukzPrice": 0,
+      "district": "ward_corner",
+      "speed": 5,
+      "style": 4,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_039",
+      "name": "Attucks VIP Sprinter 039",
+      "class": "van",
+      "price": 56250,
+      "bettabukzPrice": 0,
+      "district": "odu_lambert",
+      "speed": 6,
+      "style": 5,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_040",
+      "name": "Waterside Harbor EV 040",
+      "class": "electric",
+      "price": 50625,
+      "bettabukzPrice": 250,
+      "district": "berkley_bridge",
+      "speed": 7,
+      "style": 6,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_041",
+      "name": "Ghent Cruiser Sedan 041",
+      "class": "sedan",
+      "price": 16800,
+      "bettabukzPrice": 0,
+      "district": "downtown_granby",
+      "speed": 8,
+      "style": 7,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_042",
+      "name": "Ocean View Street Tuner 042",
+      "class": "tuner",
+      "price": 21875,
+      "bettabukzPrice": 0,
+      "district": "neon_arts",
+      "speed": 9,
+      "style": 8,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_043",
+      "name": "Military Hwy Lowrider 043",
+      "class": "lowrider",
+      "price": 25250,
+      "bettabukzPrice": 60,
+      "district": "church_attucks",
+      "speed": 10,
+      "style": 9,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_044",
+      "name": "757 Luxury Coupe 044",
+      "class": "luxury",
+      "price": 44125,
+      "bettabukzPrice": 0,
+      "district": "waterside",
+      "speed": 11,
+      "style": 10,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_045",
+      "name": "Harbor Track SUV 045",
+      "class": "performance_suv",
+      "price": 78500,
+      "bettabukzPrice": 0,
+      "district": "ghent",
+      "speed": 12,
+      "style": 11,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_046",
+      "name": "East Beach Drop-Top 046",
+      "class": "convertible",
+      "price": 64875,
+      "bettabukzPrice": 270,
+      "district": "ocean_view",
+      "speed": 13,
+      "style": 12,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_047",
+      "name": "Church Street Exotic GT 047",
+      "class": "exotic",
+      "price": 102250,
+      "bettabukzPrice": 0,
+      "district": "military_hwy",
+      "speed": 14,
+      "style": 13,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_048",
+      "name": "Tidewater Art Car 048",
+      "class": "custom",
+      "price": 30125,
+      "bettabukzPrice": 0,
+      "district": "ward_corner",
+      "speed": 15,
+      "style": 14,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_049",
+      "name": "Granby VIP Sprinter 049",
+      "class": "van",
+      "price": 60000,
+      "bettabukzPrice": 275,
+      "district": "odu_lambert",
+      "speed": 4,
+      "style": 15,
+      "storage": 4,
+      "tierRequired": "gold"
+    },
+    {
+      "id": "car_050",
+      "name": "NEON Harbor EV 050",
+      "class": "electric",
+      "price": 54375,
+      "bettabukzPrice": 0,
+      "district": "berkley_bridge",
+      "speed": 5,
+      "style": 16,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_051",
+      "name": "Attucks Cruiser Sedan 051",
+      "class": "sedan",
+      "price": 20550,
+      "bettabukzPrice": 0,
+      "district": "downtown_granby",
+      "speed": 6,
+      "style": 17,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_052",
+      "name": "Waterside Street Tuner 052",
+      "class": "tuner",
+      "price": 25625,
+      "bettabukzPrice": 55,
+      "district": "neon_arts",
+      "speed": 7,
+      "style": 18,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_053",
+      "name": "Ghent Lowrider 053",
+      "class": "lowrider",
+      "price": 29000,
+      "bettabukzPrice": 0,
+      "district": "church_attucks",
+      "speed": 8,
+      "style": 19,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_054",
+      "name": "Ocean View Luxury Coupe 054",
+      "class": "luxury",
+      "price": 47875,
+      "bettabukzPrice": 0,
+      "district": "waterside",
+      "speed": 9,
+      "style": 20,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_055",
+      "name": "Military Hwy Track SUV 055",
+      "class": "performance_suv",
+      "price": 82250,
+      "bettabukzPrice": 360,
+      "district": "ghent",
+      "speed": 10,
+      "style": 3,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_056",
+      "name": "757 Drop-Top 056",
+      "class": "convertible",
+      "price": 68625,
+      "bettabukzPrice": 0,
+      "district": "ocean_view",
+      "speed": 11,
+      "style": 4,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_057",
+      "name": "Harbor Exotic GT 057",
+      "class": "exotic",
+      "price": 106000,
+      "bettabukzPrice": 0,
+      "district": "military_hwy",
+      "speed": 12,
+      "style": 5,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_058",
+      "name": "East Beach Art Car 058",
+      "class": "custom",
+      "price": 33875,
+      "bettabukzPrice": 85,
+      "district": "ward_corner",
+      "speed": 13,
+      "style": 6,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_059",
+      "name": "Church Street VIP Sprinter 059",
+      "class": "van",
+      "price": 63750,
+      "bettabukzPrice": 0,
+      "district": "odu_lambert",
+      "speed": 14,
+      "style": 7,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_060",
+      "name": "Tidewater Harbor EV 060",
+      "class": "electric",
+      "price": 58125,
+      "bettabukzPrice": 0,
+      "district": "berkley_bridge",
+      "speed": 15,
+      "style": 8,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_061",
+      "name": "Granby Cruiser Sedan 061",
+      "class": "sedan",
+      "price": 24300,
+      "bettabukzPrice": 40,
+      "district": "downtown_granby",
+      "speed": 4,
+      "style": 9,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_062",
+      "name": "NEON Street Tuner 062",
+      "class": "tuner",
+      "price": 29375,
+      "bettabukzPrice": 0,
+      "district": "neon_arts",
+      "speed": 5,
+      "style": 10,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_063",
+      "name": "Attucks Lowrider 063",
+      "class": "lowrider",
+      "price": 32750,
+      "bettabukzPrice": 0,
+      "district": "church_attucks",
+      "speed": 6,
+      "style": 11,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_064",
+      "name": "Waterside Luxury Coupe 064",
+      "class": "luxury",
+      "price": 51625,
+      "bettabukzPrice": 195,
+      "district": "waterside",
+      "speed": 7,
+      "style": 12,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_065",
+      "name": "Ghent Track SUV 065",
+      "class": "performance_suv",
+      "price": 86000,
+      "bettabukzPrice": 0,
+      "district": "ghent",
+      "speed": 8,
+      "style": 13,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_066",
+      "name": "Ocean View Drop-Top 066",
+      "class": "convertible",
+      "price": 72375,
+      "bettabukzPrice": 0,
+      "district": "ocean_view",
+      "speed": 9,
+      "style": 14,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_067",
+      "name": "Military Hwy Exotic GT 067",
+      "class": "exotic",
+      "price": 109750,
+      "bettabukzPrice": 520,
+      "district": "military_hwy",
+      "speed": 10,
+      "style": 15,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_068",
+      "name": "757 Art Car 068",
+      "class": "custom",
+      "price": 37625,
+      "bettabukzPrice": 0,
+      "district": "ward_corner",
+      "speed": 11,
+      "style": 16,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_069",
+      "name": "Harbor VIP Sprinter 069",
+      "class": "van",
+      "price": 67500,
+      "bettabukzPrice": 0,
+      "district": "odu_lambert",
+      "speed": 12,
+      "style": 17,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_070",
+      "name": "East Beach Harbor EV 070",
+      "class": "electric",
+      "price": 61875,
+      "bettabukzPrice": 230,
+      "district": "berkley_bridge",
+      "speed": 13,
+      "style": 18,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_071",
+      "name": "Church Street Cruiser Sedan 071",
+      "class": "sedan",
+      "price": 28050,
+      "bettabukzPrice": 0,
+      "district": "downtown_granby",
+      "speed": 14,
+      "style": 19,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_072",
+      "name": "Tidewater Street Tuner 072",
+      "class": "tuner",
+      "price": 33125,
+      "bettabukzPrice": 0,
+      "district": "neon_arts",
+      "speed": 15,
+      "style": 20,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_073",
+      "name": "Granby Lowrider 073",
+      "class": "lowrider",
+      "price": 36500,
+      "bettabukzPrice": 40,
+      "district": "church_attucks",
+      "speed": 4,
+      "style": 3,
+      "storage": 3,
+      "tierRequired": "silver"
+    },
+    {
+      "id": "car_074",
+      "name": "NEON Luxury Coupe 074",
+      "class": "luxury",
+      "price": 55375,
+      "bettabukzPrice": 0,
+      "district": "waterside",
+      "speed": 5,
+      "style": 4,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_075",
+      "name": "Attucks Track SUV 075",
+      "class": "performance_suv",
+      "price": 89750,
+      "bettabukzPrice": 0,
+      "district": "ghent",
+      "speed": 6,
+      "style": 5,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_076",
+      "name": "Waterside Drop-Top 076",
+      "class": "convertible",
+      "price": 76125,
+      "bettabukzPrice": 250,
+      "district": "ocean_view",
+      "speed": 7,
+      "style": 6,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_077",
+      "name": "Ghent Exotic GT 077",
+      "class": "exotic",
+      "price": 113500,
+      "bettabukzPrice": 0,
+      "district": "military_hwy",
+      "speed": 8,
+      "style": 7,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_078",
+      "name": "Ocean View Art Car 078",
+      "class": "custom",
+      "price": 41375,
+      "bettabukzPrice": 0,
+      "district": "ward_corner",
+      "speed": 9,
+      "style": 8,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_079",
+      "name": "Military Hwy VIP Sprinter 079",
+      "class": "van",
+      "price": 71250,
+      "bettabukzPrice": 335,
+      "district": "odu_lambert",
+      "speed": 10,
+      "style": 9,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_080",
+      "name": "757 Harbor EV 080",
+      "class": "electric",
+      "price": 65625,
+      "bettabukzPrice": 0,
+      "district": "berkley_bridge",
+      "speed": 11,
+      "style": 10,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_081",
+      "name": "Harbor Cruiser Sedan 081",
+      "class": "sedan",
+      "price": 31800,
+      "bettabukzPrice": 0,
+      "district": "downtown_granby",
+      "speed": 12,
+      "style": 11,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_082",
+      "name": "East Beach Street Tuner 082",
+      "class": "tuner",
+      "price": 36875,
+      "bettabukzPrice": 35,
+      "district": "neon_arts",
+      "speed": 13,
+      "style": 12,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_083",
+      "name": "Church Street Lowrider 083",
+      "class": "lowrider",
+      "price": 40250,
+      "bettabukzPrice": 0,
+      "district": "church_attucks",
+      "speed": 14,
+      "style": 13,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_084",
+      "name": "Tidewater Luxury Coupe 084",
+      "class": "luxury",
+      "price": 59125,
+      "bettabukzPrice": 0,
+      "district": "waterside",
+      "speed": 15,
+      "style": 14,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_085",
+      "name": "Granby Track SUV 085",
+      "class": "performance_suv",
+      "price": 93500,
+      "bettabukzPrice": 340,
+      "district": "ghent",
+      "speed": 4,
+      "style": 15,
+      "storage": 5,
+      "tierRequired": "platinum"
+    },
+    {
+      "id": "car_086",
+      "name": "NEON Drop-Top 086",
+      "class": "convertible",
+      "price": 79875,
+      "bettabukzPrice": 0,
+      "district": "ocean_view",
+      "speed": 5,
+      "style": 16,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_087",
+      "name": "Attucks Exotic GT 087",
+      "class": "exotic",
+      "price": 117250,
+      "bettabukzPrice": 0,
+      "district": "military_hwy",
+      "speed": 6,
+      "style": 17,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_088",
+      "name": "Waterside Art Car 088",
+      "class": "custom",
+      "price": 45125,
+      "bettabukzPrice": 145,
+      "district": "ward_corner",
+      "speed": 7,
+      "style": 18,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_089",
+      "name": "Ghent VIP Sprinter 089",
+      "class": "van",
+      "price": 75000,
+      "bettabukzPrice": 0,
+      "district": "odu_lambert",
+      "speed": 8,
+      "style": 19,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_090",
+      "name": "Ocean View Harbor EV 090",
+      "class": "electric",
+      "price": 69375,
+      "bettabukzPrice": 0,
+      "district": "berkley_bridge",
+      "speed": 9,
+      "style": 20,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_091",
+      "name": "Military Hwy Cruiser Sedan 091",
+      "class": "sedan",
+      "price": 35550,
+      "bettabukzPrice": 20,
+      "district": "downtown_granby",
+      "speed": 10,
+      "style": 3,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_092",
+      "name": "757 Street Tuner 092",
+      "class": "tuner",
+      "price": 40625,
+      "bettabukzPrice": 0,
+      "district": "neon_arts",
+      "speed": 11,
+      "style": 4,
+      "storage": 2,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_093",
+      "name": "Harbor Lowrider 093",
+      "class": "lowrider",
+      "price": 44000,
+      "bettabukzPrice": 0,
+      "district": "church_attucks",
+      "speed": 12,
+      "style": 5,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_094",
+      "name": "East Beach Luxury Coupe 094",
+      "class": "luxury",
+      "price": 62875,
+      "bettabukzPrice": 175,
+      "district": "waterside",
+      "speed": 13,
+      "style": 6,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_095",
+      "name": "Church Street Track SUV 095",
+      "class": "performance_suv",
+      "price": 97250,
+      "bettabukzPrice": 0,
+      "district": "ghent",
+      "speed": 14,
+      "style": 7,
+      "storage": 5,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_096",
+      "name": "Tidewater Drop-Top 096",
+      "class": "convertible",
+      "price": 83625,
+      "bettabukzPrice": 0,
+      "district": "ocean_view",
+      "speed": 15,
+      "style": 8,
+      "storage": 1,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_097",
+      "name": "Granby Exotic GT 097",
+      "class": "exotic",
+      "price": 121000,
+      "bettabukzPrice": 500,
+      "district": "military_hwy",
+      "speed": 4,
+      "style": 9,
+      "storage": 2,
+      "tierRequired": "bronze"
+    },
+    {
+      "id": "car_098",
+      "name": "NEON Art Car 098",
+      "class": "custom",
+      "price": 48875,
+      "bettabukzPrice": 0,
+      "district": "ward_corner",
+      "speed": 5,
+      "style": 10,
+      "storage": 3,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_099",
+      "name": "Attucks VIP Sprinter 099",
+      "class": "van",
+      "price": 78750,
+      "bettabukzPrice": 0,
+      "district": "odu_lambert",
+      "speed": 6,
+      "style": 11,
+      "storage": 4,
+      "tierRequired": "free"
+    },
+    {
+      "id": "car_100",
+      "name": "Waterside Harbor EV 100",
+      "class": "electric",
+      "price": 73125,
+      "bettabukzPrice": 210,
+      "district": "berkley_bridge",
+      "speed": 7,
+      "style": 12,
+      "storage": 5,
+      "tierRequired": "free"
+    }
+  ],
+  "homes": [
+    {
+      "id": "home_001",
+      "name": "Granby Row Starter Rowhouse 1",
+      "district": "downtown_granby",
+      "type": "starter_rowhouse",
+      "price": 45000,
+      "bettabukzPrice": 0,
+      "upkeep": 112,
+      "garageSlots": 0,
+      "comfort": 3,
+      "incomePotential": 1
+    },
+    {
+      "id": "home_002",
+      "name": "NEON Arts Duplex 2",
+      "district": "neon_arts",
+      "type": "duplex",
+      "price": 107500,
+      "bettabukzPrice": 0,
+      "upkeep": 268,
+      "garageSlots": 1,
+      "comfort": 4,
+      "incomePotential": 2
+    },
+    {
+      "id": "home_003",
+      "name": "Attucks Quarter Downtown Loft 3",
+      "district": "church_attucks",
+      "type": "downtown_loft",
+      "price": 205000,
+      "bettabukzPrice": 0,
+      "upkeep": 512,
+      "garageSlots": 1,
+      "comfort": 5,
+      "incomePotential": 3
+    },
+    {
+      "id": "home_004",
+      "name": "Waterside Historic Townhome 4",
+      "district": "waterside",
+      "type": "historic_townhome",
+      "price": 357500,
+      "bettabukzPrice": 0,
+      "upkeep": 893,
+      "garageSlots": 1,
+      "comfort": 6,
+      "incomePotential": 4
+    },
+    {
+      "id": "home_005",
+      "name": "Ghent Live/Work Warehouse 5",
+      "district": "ghent",
+      "type": "live/work_warehouse",
+      "price": 460000,
+      "bettabukzPrice": 200,
+      "upkeep": 1150,
+      "garageSlots": 2,
+      "comfort": 7,
+      "incomePotential": 5
+    },
+    {
+      "id": "home_006",
+      "name": "Ocean View Beach House 6",
+      "district": "ocean_view",
+      "type": "beach_house",
+      "price": 612500,
+      "bettabukzPrice": 0,
+      "upkeep": 1531,
+      "garageSlots": 2,
+      "comfort": 8,
+      "incomePotential": 6
+    },
+    {
+      "id": "home_007",
+      "name": "Military Highway Harbor Penthouse 7",
+      "district": "military_hwy",
+      "type": "harbor_penthouse",
+      "price": 1325000,
+      "bettabukzPrice": 0,
+      "upkeep": 3312,
+      "garageSlots": 3,
+      "comfort": 9,
+      "incomePotential": 7
+    },
+    {
+      "id": "home_008",
+      "name": "Wards Corner Estate 8",
+      "district": "ward_corner",
+      "type": "estate",
+      "price": 2287500,
+      "bettabukzPrice": 0,
+      "upkeep": 5718,
+      "garageSlots": 5,
+      "comfort": 10,
+      "incomePotential": 8
+    },
+    {
+      "id": "home_009",
+      "name": "Lambert Point Studio Condo 9",
+      "district": "odu_lambert",
+      "type": "studio_condo",
+      "price": 240000,
+      "bettabukzPrice": 50,
+      "upkeep": 600,
+      "garageSlots": 1,
+      "comfort": 11,
+      "incomePotential": 9
+    },
+    {
+      "id": "home_010",
+      "name": "Berkley Bridge Family Brick Home 10",
+      "district": "berkley_bridge",
+      "type": "family_brick_home",
+      "price": 372500,
+      "bettabukzPrice": 0,
+      "upkeep": 931,
+      "garageSlots": 2,
+      "comfort": 12,
+      "incomePotential": 10
+    },
+    {
+      "id": "home_011",
+      "name": "Granby Row Starter Rowhouse 11",
+      "district": "downtown_granby",
+      "type": "starter_rowhouse",
+      "price": 170000,
+      "bettabukzPrice": 0,
+      "upkeep": 425,
+      "garageSlots": 0,
+      "comfort": 13,
+      "incomePotential": 11
+    },
+    {
+      "id": "home_012",
+      "name": "NEON Arts Duplex 12",
+      "district": "neon_arts",
+      "type": "duplex",
+      "price": 232500,
+      "bettabukzPrice": 0,
+      "upkeep": 581,
+      "garageSlots": 1,
+      "comfort": 14,
+      "incomePotential": 12
+    },
+    {
+      "id": "home_013",
+      "name": "Attucks Quarter Downtown Loft 13",
+      "district": "church_attucks",
+      "type": "downtown_loft",
+      "price": 330000,
+      "bettabukzPrice": 80,
+      "upkeep": 825,
+      "garageSlots": 1,
+      "comfort": 15,
+      "incomePotential": 1
+    },
+    {
+      "id": "home_014",
+      "name": "Waterside Historic Townhome 14",
+      "district": "waterside",
+      "type": "historic_townhome",
+      "price": 482500,
+      "bettabukzPrice": 0,
+      "upkeep": 1206,
+      "garageSlots": 1,
+      "comfort": 16,
+      "incomePotential": 2
+    },
+    {
+      "id": "home_015",
+      "name": "Ghent Live/Work Warehouse 15",
+      "district": "ghent",
+      "type": "live/work_warehouse",
+      "price": 585000,
+      "bettabukzPrice": 0,
+      "upkeep": 1462,
+      "garageSlots": 2,
+      "comfort": 17,
+      "incomePotential": 3
+    },
+    {
+      "id": "home_016",
+      "name": "Ocean View Beach House 16",
+      "district": "ocean_view",
+      "type": "beach_house",
+      "price": 737500,
+      "bettabukzPrice": 0,
+      "upkeep": 1843,
+      "garageSlots": 2,
+      "comfort": 18,
+      "incomePotential": 4
+    },
+    {
+      "id": "home_017",
+      "name": "Military Highway Harbor Penthouse 17",
+      "district": "military_hwy",
+      "type": "harbor_penthouse",
+      "price": 1450000,
+      "bettabukzPrice": 900,
+      "upkeep": 3625,
+      "garageSlots": 3,
+      "comfort": 19,
+      "incomePotential": 5
+    },
+    {
+      "id": "home_018",
+      "name": "Wards Corner Estate 18",
+      "district": "ward_corner",
+      "type": "estate",
+      "price": 2412500,
+      "bettabukzPrice": 0,
+      "upkeep": 6031,
+      "garageSlots": 5,
+      "comfort": 20,
+      "incomePotential": 6
+    },
+    {
+      "id": "home_019",
+      "name": "Lambert Point Studio Condo 19",
+      "district": "odu_lambert",
+      "type": "studio_condo",
+      "price": 365000,
+      "bettabukzPrice": 0,
+      "upkeep": 912,
+      "garageSlots": 1,
+      "comfort": 21,
+      "incomePotential": 7
+    },
+    {
+      "id": "home_020",
+      "name": "Berkley Bridge Family Brick Home 20",
+      "district": "berkley_bridge",
+      "type": "family_brick_home",
+      "price": 497500,
+      "bettabukzPrice": 0,
+      "upkeep": 1243,
+      "garageSlots": 2,
+      "comfort": 22,
+      "incomePotential": 8
+    },
+    {
+      "id": "home_021",
+      "name": "Granby Row Starter Rowhouse 21",
+      "district": "downtown_granby",
+      "type": "starter_rowhouse",
+      "price": 295000,
+      "bettabukzPrice": 0,
+      "upkeep": 737,
+      "garageSlots": 0,
+      "comfort": 23,
+      "incomePotential": 9
+    },
+    {
+      "id": "home_022",
+      "name": "NEON Arts Duplex 22",
+      "district": "neon_arts",
+      "type": "duplex",
+      "price": 357500,
+      "bettabukzPrice": 0,
+      "upkeep": 893,
+      "garageSlots": 1,
+      "comfort": 24,
+      "incomePotential": 10
+    },
+    {
+      "id": "home_023",
+      "name": "Attucks Quarter Downtown Loft 23",
+      "district": "church_attucks",
+      "type": "downtown_loft",
+      "price": 455000,
+      "bettabukzPrice": 0,
+      "upkeep": 1137,
+      "garageSlots": 1,
+      "comfort": 25,
+      "incomePotential": 11
+    },
+    {
+      "id": "home_024",
+      "name": "Waterside Historic Townhome 24",
+      "district": "waterside",
+      "type": "historic_townhome",
+      "price": 607500,
+      "bettabukzPrice": 0,
+      "upkeep": 1518,
+      "garageSlots": 1,
+      "comfort": 26,
+      "incomePotential": 12
+    },
+    {
+      "id": "home_025",
+      "name": "Ghent Live/Work Warehouse 25",
+      "district": "ghent",
+      "type": "live/work_warehouse",
+      "price": 710000,
+      "bettabukzPrice": 200,
+      "upkeep": 1775,
+      "garageSlots": 2,
+      "comfort": 3,
+      "incomePotential": 1
+    },
+    {
+      "id": "home_026",
+      "name": "Ocean View Beach House 26",
+      "district": "ocean_view",
+      "type": "beach_house",
+      "price": 862500,
+      "bettabukzPrice": 0,
+      "upkeep": 2156,
+      "garageSlots": 2,
+      "comfort": 4,
+      "incomePotential": 2
+    },
+    {
+      "id": "home_027",
+      "name": "Military Highway Harbor Penthouse 27",
+      "district": "military_hwy",
+      "type": "harbor_penthouse",
+      "price": 1575000,
+      "bettabukzPrice": 0,
+      "upkeep": 3937,
+      "garageSlots": 3,
+      "comfort": 5,
+      "incomePotential": 3
+    },
+    {
+      "id": "home_028",
+      "name": "Wards Corner Estate 28",
+      "district": "ward_corner",
+      "type": "estate",
+      "price": 2537500,
+      "bettabukzPrice": 0,
+      "upkeep": 6343,
+      "garageSlots": 5,
+      "comfort": 6,
+      "incomePotential": 4
+    },
+    {
+      "id": "home_029",
+      "name": "Lambert Point Studio Condo 29",
+      "district": "odu_lambert",
+      "type": "studio_condo",
+      "price": 490000,
+      "bettabukzPrice": 50,
+      "upkeep": 1225,
+      "garageSlots": 1,
+      "comfort": 7,
+      "incomePotential": 5
+    },
+    {
+      "id": "home_030",
+      "name": "Berkley Bridge Family Brick Home 30",
+      "district": "berkley_bridge",
+      "type": "family_brick_home",
+      "price": 622500,
+      "bettabukzPrice": 0,
+      "upkeep": 1556,
+      "garageSlots": 2,
+      "comfort": 8,
+      "incomePotential": 6
+    },
+    {
+      "id": "home_031",
+      "name": "Granby Row Starter Rowhouse 31",
+      "district": "downtown_granby",
+      "type": "starter_rowhouse",
+      "price": 420000,
+      "bettabukzPrice": 0,
+      "upkeep": 1050,
+      "garageSlots": 0,
+      "comfort": 9,
+      "incomePotential": 7
+    },
+    {
+      "id": "home_032",
+      "name": "NEON Arts Duplex 32",
+      "district": "neon_arts",
+      "type": "duplex",
+      "price": 482500,
+      "bettabukzPrice": 0,
+      "upkeep": 1206,
+      "garageSlots": 1,
+      "comfort": 10,
+      "incomePotential": 8
+    },
+    {
+      "id": "home_033",
+      "name": "Attucks Quarter Downtown Loft 33",
+      "district": "church_attucks",
+      "type": "downtown_loft",
+      "price": 580000,
+      "bettabukzPrice": 80,
+      "upkeep": 1450,
+      "garageSlots": 1,
+      "comfort": 11,
+      "incomePotential": 9
+    },
+    {
+      "id": "home_034",
+      "name": "Waterside Historic Townhome 34",
+      "district": "waterside",
+      "type": "historic_townhome",
+      "price": 732500,
+      "bettabukzPrice": 0,
+      "upkeep": 1831,
+      "garageSlots": 1,
+      "comfort": 12,
+      "incomePotential": 10
+    },
+    {
+      "id": "home_035",
+      "name": "Ghent Live/Work Warehouse 35",
+      "district": "ghent",
+      "type": "live/work_warehouse",
+      "price": 835000,
+      "bettabukzPrice": 0,
+      "upkeep": 2087,
+      "garageSlots": 2,
+      "comfort": 13,
+      "incomePotential": 11
+    },
+    {
+      "id": "home_036",
+      "name": "Ocean View Beach House 36",
+      "district": "ocean_view",
+      "type": "beach_house",
+      "price": 987500,
+      "bettabukzPrice": 0,
+      "upkeep": 2468,
+      "garageSlots": 2,
+      "comfort": 14,
+      "incomePotential": 12
+    },
+    {
+      "id": "home_037",
+      "name": "Military Highway Harbor Penthouse 37",
+      "district": "military_hwy",
+      "type": "harbor_penthouse",
+      "price": 1700000,
+      "bettabukzPrice": 900,
+      "upkeep": 4250,
+      "garageSlots": 3,
+      "comfort": 15,
+      "incomePotential": 1
+    },
+    {
+      "id": "home_038",
+      "name": "Wards Corner Estate 38",
+      "district": "ward_corner",
+      "type": "estate",
+      "price": 2662500,
+      "bettabukzPrice": 0,
+      "upkeep": 6656,
+      "garageSlots": 5,
+      "comfort": 16,
+      "incomePotential": 2
+    },
+    {
+      "id": "home_039",
+      "name": "Lambert Point Studio Condo 39",
+      "district": "odu_lambert",
+      "type": "studio_condo",
+      "price": 615000,
+      "bettabukzPrice": 0,
+      "upkeep": 1537,
+      "garageSlots": 1,
+      "comfort": 17,
+      "incomePotential": 3
+    },
+    {
+      "id": "home_040",
+      "name": "Berkley Bridge Family Brick Home 40",
+      "district": "berkley_bridge",
+      "type": "family_brick_home",
+      "price": 747500,
+      "bettabukzPrice": 0,
+      "upkeep": 1868,
+      "garageSlots": 2,
+      "comfort": 18,
+      "incomePotential": 4
+    },
+    {
+      "id": "home_041",
+      "name": "Granby Row Starter Rowhouse 41",
+      "district": "downtown_granby",
+      "type": "starter_rowhouse",
+      "price": 545000,
+      "bettabukzPrice": 0,
+      "upkeep": 1362,
+      "garageSlots": 0,
+      "comfort": 19,
+      "incomePotential": 5
+    },
+    {
+      "id": "home_042",
+      "name": "NEON Arts Duplex 42",
+      "district": "neon_arts",
+      "type": "duplex",
+      "price": 607500,
+      "bettabukzPrice": 0,
+      "upkeep": 1518,
+      "garageSlots": 1,
+      "comfort": 20,
+      "incomePotential": 6
+    },
+    {
+      "id": "home_043",
+      "name": "Attucks Quarter Downtown Loft 43",
+      "district": "church_attucks",
+      "type": "downtown_loft",
+      "price": 705000,
+      "bettabukzPrice": 0,
+      "upkeep": 1762,
+      "garageSlots": 1,
+      "comfort": 21,
+      "incomePotential": 7
+    },
+    {
+      "id": "home_044",
+      "name": "Waterside Historic Townhome 44",
+      "district": "waterside",
+      "type": "historic_townhome",
+      "price": 857500,
+      "bettabukzPrice": 0,
+      "upkeep": 2143,
+      "garageSlots": 1,
+      "comfort": 22,
+      "incomePotential": 8
+    },
+    {
+      "id": "home_045",
+      "name": "Ghent Live/Work Warehouse 45",
+      "district": "ghent",
+      "type": "live/work_warehouse",
+      "price": 960000,
+      "bettabukzPrice": 200,
+      "upkeep": 2400,
+      "garageSlots": 2,
+      "comfort": 23,
+      "incomePotential": 9
+    },
+    {
+      "id": "home_046",
+      "name": "Ocean View Beach House 46",
+      "district": "ocean_view",
+      "type": "beach_house",
+      "price": 1112500,
+      "bettabukzPrice": 0,
+      "upkeep": 2781,
+      "garageSlots": 2,
+      "comfort": 24,
+      "incomePotential": 10
+    },
+    {
+      "id": "home_047",
+      "name": "Military Highway Harbor Penthouse 47",
+      "district": "military_hwy",
+      "type": "harbor_penthouse",
+      "price": 1825000,
+      "bettabukzPrice": 0,
+      "upkeep": 4562,
+      "garageSlots": 3,
+      "comfort": 25,
+      "incomePotential": 11
+    },
+    {
+      "id": "home_048",
+      "name": "Wards Corner Estate 48",
+      "district": "ward_corner",
+      "type": "estate",
+      "price": 2787500,
+      "bettabukzPrice": 0,
+      "upkeep": 6968,
+      "garageSlots": 5,
+      "comfort": 26,
+      "incomePotential": 12
+    },
+    {
+      "id": "home_049",
+      "name": "Lambert Point Studio Condo 49",
+      "district": "odu_lambert",
+      "type": "studio_condo",
+      "price": 740000,
+      "bettabukzPrice": 50,
+      "upkeep": 1850,
+      "garageSlots": 1,
+      "comfort": 3,
+      "incomePotential": 1
+    },
+    {
+      "id": "home_050",
+      "name": "Berkley Bridge Family Brick Home 50",
+      "district": "berkley_bridge",
+      "type": "family_brick_home",
+      "price": 872500,
+      "bettabukzPrice": 0,
+      "upkeep": 2181,
+      "garageSlots": 2,
+      "comfort": 4,
+      "incomePotential": 2
+    }
+  ],
+  "shops": [
+    {
+      "id": "shop_01",
+      "name": "MacArthur Luxe Exchange",
+      "district": "downtown_granby",
+      "type": "mall_luxury",
+      "items": [
+        {
+          "id": "shop_01_item_01",
+          "name": "Tailored Harbor Peacoat",
+          "category": "mall_luxury",
+          "price": 75,
+          "bettabukzPrice": 0,
+          "respect": 1,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_01_item_02",
+          "name": "Gold Rim Designer Frames",
+          "category": "mall_luxury",
+          "price": 425,
+          "bettabukzPrice": 0,
+          "respect": 2,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_01_item_03",
+          "name": "757 Limited Sneaker Drop",
+          "category": "mall_luxury",
+          "price": 775,
+          "bettabukzPrice": 0,
+          "respect": 3,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_01_item_04",
+          "name": "Executive Steel Watch",
+          "category": "mall_luxury",
+          "price": 1125,
+          "bettabukzPrice": 0,
+          "respect": 4,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_01_item_05",
+          "name": "Premium Leather Weekender",
+          "category": "mall_luxury",
+          "price": 1475,
+          "bettabukzPrice": 0,
+          "respect": 5,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_02",
+      "name": "NEON Thread Lab",
+      "district": "neon_arts",
+      "type": "streetwear",
+      "items": [
+        {
+          "id": "shop_02_item_01",
+          "name": "Mural Bomber Jacket",
+          "category": "streetwear",
+          "price": 200,
+          "bettabukzPrice": 10,
+          "respect": 2,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_02_item_02",
+          "name": "Granby Graphic Tee",
+          "category": "streetwear",
+          "price": 550,
+          "bettabukzPrice": 25,
+          "respect": 3,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_02_item_03",
+          "name": "Artist Cargo Set",
+          "category": "streetwear",
+          "price": 900,
+          "bettabukzPrice": 40,
+          "respect": 4,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_02_item_04",
+          "name": "Custom Airbrushed Denim",
+          "category": "streetwear",
+          "price": 1250,
+          "bettabukzPrice": 55,
+          "respect": 5,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_02_item_05",
+          "name": "Neon Night Hoodie",
+          "category": "streetwear",
+          "price": 1600,
+          "bettabukzPrice": 70,
+          "respect": 6,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_03",
+      "name": "Attucks Music House",
+      "district": "church_attucks",
+      "type": "music",
+      "items": [
+        {
+          "id": "shop_03_item_01",
+          "name": "Home Studio Mic Bundle",
+          "category": "music",
+          "price": 325,
+          "bettabukzPrice": 10,
+          "respect": 3,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_03_item_02",
+          "name": "Classic Soul Vinyl Wall Collection",
+          "category": "music",
+          "price": 675,
+          "bettabukzPrice": 25,
+          "respect": 4,
+          "businessBoost": 1,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_03_item_03",
+          "name": "Stage Ready Suit",
+          "category": "music",
+          "price": 1025,
+          "bettabukzPrice": 40,
+          "respect": 5,
+          "businessBoost": 2,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_03_item_04",
+          "name": "Producer Laptop",
+          "category": "music",
+          "price": 1375,
+          "bettabukzPrice": 55,
+          "respect": 6,
+          "businessBoost": 3,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_03_item_05",
+          "name": "Gold Cable Studio Kit",
+          "category": "music",
+          "price": 1725,
+          "bettabukzPrice": 70,
+          "respect": 7,
+          "businessBoost": 4,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_04",
+      "name": "Waterside VIP Concierge",
+      "district": "waterside",
+      "type": "vip",
+      "items": [
+        {
+          "id": "shop_04_item_01",
+          "name": "Harbor VIP Table Package",
+          "category": "vip",
+          "price": 450,
+          "bettabukzPrice": 10,
+          "respect": 4,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_04_item_02",
+          "name": "Private River Cruise Night",
+          "category": "vip",
+          "price": 800,
+          "bettabukzPrice": 25,
+          "respect": 5,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_04_item_03",
+          "name": "Chef Pop-Up Event Booking",
+          "category": "vip",
+          "price": 1150,
+          "bettabukzPrice": 40,
+          "respect": 6,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_04_item_04",
+          "name": "Waterfront Brand Party",
+          "category": "vip",
+          "price": 1500,
+          "bettabukzPrice": 55,
+          "respect": 7,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_04_item_05",
+          "name": "Rooftop Bottle Service",
+          "category": "vip",
+          "price": 1850,
+          "bettabukzPrice": 70,
+          "respect": 8,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_05",
+      "name": "Ocean View Boardwalk Supply",
+      "district": "ocean_view",
+      "type": "beach",
+      "items": [
+        {
+          "id": "shop_05_item_01",
+          "name": "Beach Cruiser Bike",
+          "category": "beach",
+          "price": 575,
+          "bettabukzPrice": 0,
+          "respect": 5,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_05_item_02",
+          "name": "Jet Ski Weekend Pass",
+          "category": "beach",
+          "price": 925,
+          "bettabukzPrice": 0,
+          "respect": 6,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_05_item_03",
+          "name": "Resort Linen Fit",
+          "category": "beach",
+          "price": 1275,
+          "bettabukzPrice": 0,
+          "respect": 7,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_05_item_04",
+          "name": "Beach House Grill Set",
+          "category": "beach",
+          "price": 1625,
+          "bettabukzPrice": 0,
+          "respect": 8,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_05_item_05",
+          "name": "Boardwalk Photo Package",
+          "category": "beach",
+          "price": 1975,
+          "bettabukzPrice": 0,
+          "respect": 9,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_06",
+      "name": "Military Highway Customs",
+      "district": "military_hwy",
+      "type": "auto",
+      "items": [
+        {
+          "id": "shop_06_item_01",
+          "name": "Pearl Paint Wrap",
+          "category": "auto",
+          "price": 700,
+          "bettabukzPrice": 10,
+          "respect": 6,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_06_item_02",
+          "name": "Forged Chrome Wheels",
+          "category": "auto",
+          "price": 1050,
+          "bettabukzPrice": 25,
+          "respect": 7,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_06_item_03",
+          "name": "Competition Bass Audio System",
+          "category": "auto",
+          "price": 1400,
+          "bettabukzPrice": 40,
+          "respect": 8,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_06_item_04",
+          "name": "Performance Street Tune",
+          "category": "auto",
+          "price": 1750,
+          "bettabukzPrice": 55,
+          "respect": 9,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_06_item_05",
+          "name": "Hydraulic Show Kit",
+          "category": "auto",
+          "price": 2100,
+          "bettabukzPrice": 70,
+          "respect": 10,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_07",
+      "name": "Ghent Home Atelier",
+      "district": "ghent",
+      "type": "home",
+      "items": [
+        {
+          "id": "shop_07_item_01",
+          "name": "Designer Kitchen Remodel",
+          "category": "home",
+          "price": 825,
+          "bettabukzPrice": 0,
+          "respect": 7,
+          "businessBoost": 0,
+          "homeComfort": 3
+        },
+        {
+          "id": "shop_07_item_02",
+          "name": "Home Theater Suite",
+          "category": "home",
+          "price": 1175,
+          "bettabukzPrice": 0,
+          "respect": 8,
+          "businessBoost": 0,
+          "homeComfort": 4
+        },
+        {
+          "id": "shop_07_item_03",
+          "name": "Art Wall Lighting",
+          "category": "home",
+          "price": 1525,
+          "bettabukzPrice": 0,
+          "respect": 9,
+          "businessBoost": 0,
+          "homeComfort": 5
+        },
+        {
+          "id": "shop_07_item_04",
+          "name": "Luxury Sofa Set",
+          "category": "home",
+          "price": 1875,
+          "bettabukzPrice": 0,
+          "respect": 10,
+          "businessBoost": 0,
+          "homeComfort": 6
+        },
+        {
+          "id": "shop_07_item_05",
+          "name": "Marble Dining Set",
+          "category": "home",
+          "price": 2225,
+          "bettabukzPrice": 0,
+          "respect": 11,
+          "businessBoost": 0,
+          "homeComfort": 7
+        }
+      ]
+    },
+    {
+      "id": "shop_08",
+      "name": "Lambert Point Tech Depot",
+      "district": "odu_lambert",
+      "type": "tech",
+      "items": [
+        {
+          "id": "shop_08_item_01",
+          "name": "Creator Laptop",
+          "category": "tech",
+          "price": 950,
+          "bettabukzPrice": 0,
+          "respect": 8,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_08_item_02",
+          "name": "Streaming Camera Kit",
+          "category": "tech",
+          "price": 1300,
+          "bettabukzPrice": 0,
+          "respect": 9,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_08_item_03",
+          "name": "Portable Beat Pad",
+          "category": "tech",
+          "price": 1650,
+          "bettabukzPrice": 0,
+          "respect": 10,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_08_item_04",
+          "name": "Drone Shot Package",
+          "category": "tech",
+          "price": 2000,
+          "bettabukzPrice": 0,
+          "respect": 11,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_08_item_05",
+          "name": "Security Camera Kit",
+          "category": "tech",
+          "price": 2350,
+          "bettabukzPrice": 0,
+          "respect": 12,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_09",
+      "name": "Wards Corner Family Market",
+      "district": "ward_corner",
+      "type": "general",
+      "items": [
+        {
+          "id": "shop_09_item_01",
+          "name": "Weekly Grocery Bundle",
+          "category": "general",
+          "price": 1075,
+          "bettabukzPrice": 0,
+          "respect": 9,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_09_item_02",
+          "name": "Cookout Pack",
+          "category": "general",
+          "price": 1425,
+          "bettabukzPrice": 0,
+          "respect": 10,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_09_item_03",
+          "name": "Home Cleaning Kit",
+          "category": "general",
+          "price": 1775,
+          "bettabukzPrice": 0,
+          "respect": 11,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_09_item_04",
+          "name": "Backyard Game Set",
+          "category": "general",
+          "price": 2125,
+          "bettabukzPrice": 0,
+          "respect": 12,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_09_item_05",
+          "name": "Family Photo Voucher",
+          "category": "general",
+          "price": 2475,
+          "bettabukzPrice": 0,
+          "respect": 13,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_10",
+      "name": "Berkley Bridge Business Hub",
+      "district": "berkley_bridge",
+      "type": "business",
+      "items": [
+        {
+          "id": "shop_10_item_01",
+          "name": "LLC Starter Pack",
+          "category": "business",
+          "price": 1200,
+          "bettabukzPrice": 0,
+          "respect": 10,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_10_item_02",
+          "name": "Mobile POS Kit",
+          "category": "business",
+          "price": 1550,
+          "bettabukzPrice": 0,
+          "respect": 11,
+          "businessBoost": 1,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_10_item_03",
+          "name": "Inventory Scanner",
+          "category": "business",
+          "price": 1900,
+          "bettabukzPrice": 0,
+          "respect": 12,
+          "businessBoost": 2,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_10_item_04",
+          "name": "Brand Logo Package",
+          "category": "business",
+          "price": 2250,
+          "bettabukzPrice": 0,
+          "respect": 13,
+          "businessBoost": 3,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_10_item_05",
+          "name": "Community Vendor Booth",
+          "category": "business",
+          "price": 2600,
+          "bettabukzPrice": 0,
+          "respect": 14,
+          "businessBoost": 4,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_11",
+      "name": "MacArthur Luxe Exchange II",
+      "district": "downtown_granby",
+      "type": "mall_luxury",
+      "items": [
+        {
+          "id": "shop_11_item_01",
+          "name": "Tailored Harbor Peacoat",
+          "category": "mall_luxury",
+          "price": 1325,
+          "bettabukzPrice": 0,
+          "respect": 11,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_11_item_02",
+          "name": "Gold Rim Designer Frames",
+          "category": "mall_luxury",
+          "price": 1675,
+          "bettabukzPrice": 0,
+          "respect": 12,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_11_item_03",
+          "name": "757 Limited Sneaker Drop",
+          "category": "mall_luxury",
+          "price": 2025,
+          "bettabukzPrice": 0,
+          "respect": 13,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_11_item_04",
+          "name": "Executive Steel Watch",
+          "category": "mall_luxury",
+          "price": 2375,
+          "bettabukzPrice": 0,
+          "respect": 14,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_11_item_05",
+          "name": "Premium Leather Weekender",
+          "category": "mall_luxury",
+          "price": 2725,
+          "bettabukzPrice": 0,
+          "respect": 15,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_12",
+      "name": "NEON Thread Lab II",
+      "district": "neon_arts",
+      "type": "streetwear",
+      "items": [
+        {
+          "id": "shop_12_item_01",
+          "name": "Mural Bomber Jacket",
+          "category": "streetwear",
+          "price": 1450,
+          "bettabukzPrice": 10,
+          "respect": 12,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_12_item_02",
+          "name": "Granby Graphic Tee",
+          "category": "streetwear",
+          "price": 1800,
+          "bettabukzPrice": 25,
+          "respect": 13,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_12_item_03",
+          "name": "Artist Cargo Set",
+          "category": "streetwear",
+          "price": 2150,
+          "bettabukzPrice": 40,
+          "respect": 14,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_12_item_04",
+          "name": "Custom Airbrushed Denim",
+          "category": "streetwear",
+          "price": 2500,
+          "bettabukzPrice": 55,
+          "respect": 15,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_12_item_05",
+          "name": "Neon Night Hoodie",
+          "category": "streetwear",
+          "price": 2850,
+          "bettabukzPrice": 70,
+          "respect": 16,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_13",
+      "name": "Attucks Music House II",
+      "district": "church_attucks",
+      "type": "music",
+      "items": [
+        {
+          "id": "shop_13_item_01",
+          "name": "Home Studio Mic Bundle",
+          "category": "music",
+          "price": 1575,
+          "bettabukzPrice": 10,
+          "respect": 13,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_13_item_02",
+          "name": "Classic Soul Vinyl Wall Collection",
+          "category": "music",
+          "price": 1925,
+          "bettabukzPrice": 25,
+          "respect": 14,
+          "businessBoost": 1,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_13_item_03",
+          "name": "Stage Ready Suit",
+          "category": "music",
+          "price": 2275,
+          "bettabukzPrice": 40,
+          "respect": 15,
+          "businessBoost": 2,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_13_item_04",
+          "name": "Producer Laptop",
+          "category": "music",
+          "price": 2625,
+          "bettabukzPrice": 55,
+          "respect": 16,
+          "businessBoost": 3,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_13_item_05",
+          "name": "Gold Cable Studio Kit",
+          "category": "music",
+          "price": 2975,
+          "bettabukzPrice": 70,
+          "respect": 17,
+          "businessBoost": 4,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_14",
+      "name": "Waterside VIP Concierge II",
+      "district": "waterside",
+      "type": "vip",
+      "items": [
+        {
+          "id": "shop_14_item_01",
+          "name": "Harbor VIP Table Package",
+          "category": "vip",
+          "price": 1700,
+          "bettabukzPrice": 10,
+          "respect": 14,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_14_item_02",
+          "name": "Private River Cruise Night",
+          "category": "vip",
+          "price": 2050,
+          "bettabukzPrice": 25,
+          "respect": 15,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_14_item_03",
+          "name": "Chef Pop-Up Event Booking",
+          "category": "vip",
+          "price": 2400,
+          "bettabukzPrice": 40,
+          "respect": 16,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_14_item_04",
+          "name": "Waterfront Brand Party",
+          "category": "vip",
+          "price": 2750,
+          "bettabukzPrice": 55,
+          "respect": 17,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_14_item_05",
+          "name": "Rooftop Bottle Service",
+          "category": "vip",
+          "price": 3100,
+          "bettabukzPrice": 70,
+          "respect": 18,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_15",
+      "name": "Ocean View Boardwalk Supply II",
+      "district": "ocean_view",
+      "type": "beach",
+      "items": [
+        {
+          "id": "shop_15_item_01",
+          "name": "Beach Cruiser Bike",
+          "category": "beach",
+          "price": 1825,
+          "bettabukzPrice": 0,
+          "respect": 15,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_15_item_02",
+          "name": "Jet Ski Weekend Pass",
+          "category": "beach",
+          "price": 2175,
+          "bettabukzPrice": 0,
+          "respect": 16,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_15_item_03",
+          "name": "Resort Linen Fit",
+          "category": "beach",
+          "price": 2525,
+          "bettabukzPrice": 0,
+          "respect": 17,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_15_item_04",
+          "name": "Beach House Grill Set",
+          "category": "beach",
+          "price": 2875,
+          "bettabukzPrice": 0,
+          "respect": 18,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_15_item_05",
+          "name": "Boardwalk Photo Package",
+          "category": "beach",
+          "price": 3225,
+          "bettabukzPrice": 0,
+          "respect": 19,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_16",
+      "name": "Military Highway Customs II",
+      "district": "military_hwy",
+      "type": "auto",
+      "items": [
+        {
+          "id": "shop_16_item_01",
+          "name": "Pearl Paint Wrap",
+          "category": "auto",
+          "price": 1950,
+          "bettabukzPrice": 10,
+          "respect": 16,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_16_item_02",
+          "name": "Forged Chrome Wheels",
+          "category": "auto",
+          "price": 2300,
+          "bettabukzPrice": 25,
+          "respect": 17,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_16_item_03",
+          "name": "Competition Bass Audio System",
+          "category": "auto",
+          "price": 2650,
+          "bettabukzPrice": 40,
+          "respect": 18,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_16_item_04",
+          "name": "Performance Street Tune",
+          "category": "auto",
+          "price": 3000,
+          "bettabukzPrice": 55,
+          "respect": 19,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_16_item_05",
+          "name": "Hydraulic Show Kit",
+          "category": "auto",
+          "price": 3350,
+          "bettabukzPrice": 70,
+          "respect": 20,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_17",
+      "name": "Ghent Home Atelier II",
+      "district": "ghent",
+      "type": "home",
+      "items": [
+        {
+          "id": "shop_17_item_01",
+          "name": "Designer Kitchen Remodel",
+          "category": "home",
+          "price": 2075,
+          "bettabukzPrice": 0,
+          "respect": 17,
+          "businessBoost": 0,
+          "homeComfort": 3
+        },
+        {
+          "id": "shop_17_item_02",
+          "name": "Home Theater Suite",
+          "category": "home",
+          "price": 2425,
+          "bettabukzPrice": 0,
+          "respect": 18,
+          "businessBoost": 0,
+          "homeComfort": 4
+        },
+        {
+          "id": "shop_17_item_03",
+          "name": "Art Wall Lighting",
+          "category": "home",
+          "price": 2775,
+          "bettabukzPrice": 0,
+          "respect": 19,
+          "businessBoost": 0,
+          "homeComfort": 5
+        },
+        {
+          "id": "shop_17_item_04",
+          "name": "Luxury Sofa Set",
+          "category": "home",
+          "price": 3125,
+          "bettabukzPrice": 0,
+          "respect": 20,
+          "businessBoost": 0,
+          "homeComfort": 6
+        },
+        {
+          "id": "shop_17_item_05",
+          "name": "Marble Dining Set",
+          "category": "home",
+          "price": 3475,
+          "bettabukzPrice": 0,
+          "respect": 21,
+          "businessBoost": 0,
+          "homeComfort": 7
+        }
+      ]
+    },
+    {
+      "id": "shop_18",
+      "name": "Lambert Point Tech Depot II",
+      "district": "odu_lambert",
+      "type": "tech",
+      "items": [
+        {
+          "id": "shop_18_item_01",
+          "name": "Creator Laptop",
+          "category": "tech",
+          "price": 2200,
+          "bettabukzPrice": 0,
+          "respect": 18,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_18_item_02",
+          "name": "Streaming Camera Kit",
+          "category": "tech",
+          "price": 2550,
+          "bettabukzPrice": 0,
+          "respect": 19,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_18_item_03",
+          "name": "Portable Beat Pad",
+          "category": "tech",
+          "price": 2900,
+          "bettabukzPrice": 0,
+          "respect": 20,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_18_item_04",
+          "name": "Drone Shot Package",
+          "category": "tech",
+          "price": 3250,
+          "bettabukzPrice": 0,
+          "respect": 21,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_18_item_05",
+          "name": "Security Camera Kit",
+          "category": "tech",
+          "price": 3600,
+          "bettabukzPrice": 0,
+          "respect": 22,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_19",
+      "name": "Wards Corner Family Market II",
+      "district": "ward_corner",
+      "type": "general",
+      "items": [
+        {
+          "id": "shop_19_item_01",
+          "name": "Weekly Grocery Bundle",
+          "category": "general",
+          "price": 2325,
+          "bettabukzPrice": 0,
+          "respect": 19,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_19_item_02",
+          "name": "Cookout Pack",
+          "category": "general",
+          "price": 2675,
+          "bettabukzPrice": 0,
+          "respect": 20,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_19_item_03",
+          "name": "Home Cleaning Kit",
+          "category": "general",
+          "price": 3025,
+          "bettabukzPrice": 0,
+          "respect": 21,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_19_item_04",
+          "name": "Backyard Game Set",
+          "category": "general",
+          "price": 3375,
+          "bettabukzPrice": 0,
+          "respect": 22,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_19_item_05",
+          "name": "Family Photo Voucher",
+          "category": "general",
+          "price": 3725,
+          "bettabukzPrice": 0,
+          "respect": 23,
+          "businessBoost": 0,
+          "homeComfort": 0
+        }
+      ]
+    },
+    {
+      "id": "shop_20",
+      "name": "Berkley Bridge Business Hub II",
+      "district": "berkley_bridge",
+      "type": "business",
+      "items": [
+        {
+          "id": "shop_20_item_01",
+          "name": "LLC Starter Pack",
+          "category": "business",
+          "price": 2450,
+          "bettabukzPrice": 0,
+          "respect": 20,
+          "businessBoost": 0,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_20_item_02",
+          "name": "Mobile POS Kit",
+          "category": "business",
+          "price": 2800,
+          "bettabukzPrice": 0,
+          "respect": 21,
+          "businessBoost": 1,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_20_item_03",
+          "name": "Inventory Scanner",
+          "category": "business",
+          "price": 3150,
+          "bettabukzPrice": 0,
+          "respect": 22,
+          "businessBoost": 2,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_20_item_04",
+          "name": "Brand Logo Package",
+          "category": "business",
+          "price": 3500,
+          "bettabukzPrice": 0,
+          "respect": 23,
+          "businessBoost": 3,
+          "homeComfort": 0
+        },
+        {
+          "id": "shop_20_item_05",
+          "name": "Community Vendor Booth",
+          "category": "business",
+          "price": 3850,
+          "bettabukzPrice": 0,
+          "respect": 24,
+          "businessBoost": 4,
+          "homeComfort": 0
+        }
+      ]
+    }
+  ],
+  "pets": [
+    {
+      "id": "pet_001",
+      "name": "Harbor Cat 1",
+      "price": 500,
+      "bettabukzPrice": 25,
+      "district": "downtown_granby",
+      "careCost": 25,
+      "respect": 2,
+      "comfort": 1
+    },
+    {
+      "id": "pet_002",
+      "name": "Boardwalk Parrot 2",
+      "price": 775,
+      "bettabukzPrice": 35,
+      "district": "neon_arts",
+      "careCost": 30,
+      "respect": 3,
+      "comfort": 2
+    },
+    {
+      "id": "pet_003",
+      "name": "Studio Bulldog 3",
+      "price": 1050,
+      "bettabukzPrice": 45,
+      "district": "church_attucks",
+      "careCost": 35,
+      "respect": 4,
+      "comfort": 3
+    },
+    {
+      "id": "pet_004",
+      "name": "Luxury Koi Pond 4",
+      "price": 1325,
+      "bettabukzPrice": 55,
+      "district": "waterside",
+      "careCost": 40,
+      "respect": 5,
+      "comfort": 4
+    },
+    {
+      "id": "pet_005",
+      "name": "Security Shepherd 5",
+      "price": 1600,
+      "bettabukzPrice": 65,
+      "district": "ghent",
+      "careCost": 45,
+      "respect": 6,
+      "comfort": 5
+    },
+    {
+      "id": "pet_006",
+      "name": "Beach Turtle 6",
+      "price": 1875,
+      "bettabukzPrice": 75,
+      "district": "ocean_view",
+      "careCost": 50,
+      "respect": 7,
+      "comfort": 6
+    },
+    {
+      "id": "pet_007",
+      "name": "Art Studio Ferret 7",
+      "price": 2150,
+      "bettabukzPrice": 25,
+      "district": "military_hwy",
+      "careCost": 55,
+      "respect": 8,
+      "comfort": 7
+    },
+    {
+      "id": "pet_008",
+      "name": "VIP Mini Horse 8",
+      "price": 2425,
+      "bettabukzPrice": 35,
+      "district": "ward_corner",
+      "careCost": 60,
+      "respect": 9,
+      "comfort": 8
+    },
+    {
+      "id": "pet_009",
+      "name": "Backyard Chickens 9",
+      "price": 2700,
+      "bettabukzPrice": 45,
+      "district": "odu_lambert",
+      "careCost": 65,
+      "respect": 10,
+      "comfort": 9
+    },
+    {
+      "id": "pet_010",
+      "name": "Aquarium Reef 10",
+      "price": 2975,
+      "bettabukzPrice": 55,
+      "district": "berkley_bridge",
+      "careCost": 70,
+      "respect": 11,
+      "comfort": 10
+    },
+    {
+      "id": "pet_011",
+      "name": "Harbor Cat 11",
+      "price": 3250,
+      "bettabukzPrice": 65,
+      "district": "downtown_granby",
+      "careCost": 75,
+      "respect": 12,
+      "comfort": 1
+    },
+    {
+      "id": "pet_012",
+      "name": "Boardwalk Parrot 12",
+      "price": 3525,
+      "bettabukzPrice": 75,
+      "district": "neon_arts",
+      "careCost": 80,
+      "respect": 13,
+      "comfort": 2
+    },
+    {
+      "id": "pet_013",
+      "name": "Studio Bulldog 13",
+      "price": 3800,
+      "bettabukzPrice": 25,
+      "district": "church_attucks",
+      "careCost": 85,
+      "respect": 2,
+      "comfort": 3
+    },
+    {
+      "id": "pet_014",
+      "name": "Luxury Koi Pond 14",
+      "price": 4075,
+      "bettabukzPrice": 35,
+      "district": "waterside",
+      "careCost": 90,
+      "respect": 3,
+      "comfort": 4
+    },
+    {
+      "id": "pet_015",
+      "name": "Security Shepherd 15",
+      "price": 4350,
+      "bettabukzPrice": 45,
+      "district": "ghent",
+      "careCost": 95,
+      "respect": 4,
+      "comfort": 5
+    },
+    {
+      "id": "pet_016",
+      "name": "Beach Turtle 16",
+      "price": 4625,
+      "bettabukzPrice": 55,
+      "district": "ocean_view",
+      "careCost": 100,
+      "respect": 5,
+      "comfort": 6
+    },
+    {
+      "id": "pet_017",
+      "name": "Art Studio Ferret 17",
+      "price": 4900,
+      "bettabukzPrice": 65,
+      "district": "military_hwy",
+      "careCost": 105,
+      "respect": 6,
+      "comfort": 7
+    },
+    {
+      "id": "pet_018",
+      "name": "VIP Mini Horse 18",
+      "price": 5175,
+      "bettabukzPrice": 75,
+      "district": "ward_corner",
+      "careCost": 110,
+      "respect": 7,
+      "comfort": 8
+    },
+    {
+      "id": "pet_019",
+      "name": "Backyard Chickens 19",
+      "price": 5450,
+      "bettabukzPrice": 25,
+      "district": "odu_lambert",
+      "careCost": 115,
+      "respect": 8,
+      "comfort": 9
+    },
+    {
+      "id": "pet_020",
+      "name": "Aquarium Reef 20",
+      "price": 5725,
+      "bettabukzPrice": 35,
+      "district": "berkley_bridge",
+      "careCost": 120,
+      "respect": 9,
+      "comfort": 10
+    },
+    {
+      "id": "pet_021",
+      "name": "Harbor Cat 21",
+      "price": 6000,
+      "bettabukzPrice": 45,
+      "district": "downtown_granby",
+      "careCost": 125,
+      "respect": 10,
+      "comfort": 1
+    },
+    {
+      "id": "pet_022",
+      "name": "Boardwalk Parrot 22",
+      "price": 6275,
+      "bettabukzPrice": 55,
+      "district": "neon_arts",
+      "careCost": 130,
+      "respect": 11,
+      "comfort": 2
+    },
+    {
+      "id": "pet_023",
+      "name": "Studio Bulldog 23",
+      "price": 6550,
+      "bettabukzPrice": 65,
+      "district": "church_attucks",
+      "careCost": 135,
+      "respect": 12,
+      "comfort": 3
+    },
+    {
+      "id": "pet_024",
+      "name": "Luxury Koi Pond 24",
+      "price": 6825,
+      "bettabukzPrice": 75,
+      "district": "waterside",
+      "careCost": 140,
+      "respect": 13,
+      "comfort": 4
+    },
+    {
+      "id": "pet_025",
+      "name": "Security Shepherd 25",
+      "price": 7100,
+      "bettabukzPrice": 25,
+      "district": "ghent",
+      "careCost": 145,
+      "respect": 2,
+      "comfort": 5
+    },
+    {
+      "id": "pet_026",
+      "name": "Beach Turtle 26",
+      "price": 7375,
+      "bettabukzPrice": 35,
+      "district": "ocean_view",
+      "careCost": 150,
+      "respect": 3,
+      "comfort": 6
+    },
+    {
+      "id": "pet_027",
+      "name": "Art Studio Ferret 27",
+      "price": 7650,
+      "bettabukzPrice": 45,
+      "district": "military_hwy",
+      "careCost": 155,
+      "respect": 4,
+      "comfort": 7
+    },
+    {
+      "id": "pet_028",
+      "name": "VIP Mini Horse 28",
+      "price": 7925,
+      "bettabukzPrice": 55,
+      "district": "ward_corner",
+      "careCost": 160,
+      "respect": 5,
+      "comfort": 8
+    },
+    {
+      "id": "pet_029",
+      "name": "Backyard Chickens 29",
+      "price": 8200,
+      "bettabukzPrice": 65,
+      "district": "odu_lambert",
+      "careCost": 165,
+      "respect": 6,
+      "comfort": 9
+    },
+    {
+      "id": "pet_030",
+      "name": "Aquarium Reef 30",
+      "price": 8475,
+      "bettabukzPrice": 75,
+      "district": "berkley_bridge",
+      "careCost": 170,
+      "respect": 7,
+      "comfort": 10
+    }
+  ],
+  "memberTiers": [
+    {
+      "id": "free",
+      "name": "Free Player",
+      "bettabukzCost": 0,
+      "dailyBettaBukz": 10,
+      "cashBonusPct": 0,
+      "queuePriority": 0,
+      "garageBonus": 0,
+      "exclusiveTag": "standard"
+    },
+    {
+      "id": "bronze",
+      "name": "Betta Bronze",
+      "bettabukzCost": 500,
+      "dailyBettaBukz": 25,
+      "cashBonusPct": 5,
+      "queuePriority": 1,
+      "garageBonus": 1,
+      "exclusiveTag": "bronze"
+    },
+    {
+      "id": "silver",
+      "name": "Betta Silver",
+      "bettabukzCost": 1500,
+      "dailyBettaBukz": 60,
+      "cashBonusPct": 10,
+      "queuePriority": 2,
+      "garageBonus": 2,
+      "exclusiveTag": "silver"
+    },
+    {
+      "id": "gold",
+      "name": "Betta Gold",
+      "bettabukzCost": 4500,
+      "dailyBettaBukz": 150,
+      "cashBonusPct": 15,
+      "queuePriority": 3,
+      "garageBonus": 3,
+      "exclusiveTag": "gold"
+    },
+    {
+      "id": "platinum",
+      "name": "Betta Platinum",
+      "bettabukzCost": 12000,
+      "dailyBettaBukz": 400,
+      "cashBonusPct": 22,
+      "queuePriority": 4,
+      "garageBonus": 5,
+      "exclusiveTag": "platinum"
+    },
+    {
+      "id": "founder",
+      "name": "Betta Founder",
+      "bettabukzCost": 30000,
+      "dailyBettaBukz": 1000,
+      "cashBonusPct": 30,
+      "queuePriority": 5,
+      "garageBonus": 8,
+      "exclusiveTag": "founder"
+    }
+  ],
+  "exclusivePurchases": [
+    {
+      "id": "excl_001",
+      "name": "BettaKarts Founder Garage Bay",
+      "bettabukzPrice": 300,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "bronze",
+      "district": "downtown_granby",
+      "respect": 15,
+      "businessBoost": 0,
+      "homeComfort": 0
+    },
+    {
+      "id": "excl_002",
+      "name": "Luxury Arena Skybox",
+      "bettabukzPrice": 540,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "silver",
+      "district": "neon_arts",
+      "respect": 18,
+      "businessBoost": 2,
+      "homeComfort": 4
+    },
+    {
+      "id": "excl_003",
+      "name": "VIP Neon Crown Nameplate",
+      "bettabukzPrice": 780,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "gold",
+      "district": "church_attucks",
+      "respect": 21,
+      "businessBoost": 4,
+      "homeComfort": 8
+    },
+    {
+      "id": "excl_004",
+      "name": "Founder-Only Gold Kart Wrap",
+      "bettabukzPrice": 1020,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "platinum",
+      "district": "waterside",
+      "respect": 24,
+      "businessBoost": 6,
+      "homeComfort": 12
+    },
+    {
+      "id": "excl_005",
+      "name": "Daily Rewards Multiplier Token",
+      "bettabukzPrice": 1260,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "founder",
+      "district": "ghent",
+      "respect": 27,
+      "businessBoost": 8,
+      "homeComfort": 16
+    },
+    {
+      "id": "excl_006",
+      "name": "BettaBukz Vault Safe",
+      "bettabukzPrice": 1500,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "bronze",
+      "district": "ocean_view",
+      "respect": 30,
+      "businessBoost": 10,
+      "homeComfort": 20
+    },
+    {
+      "id": "excl_007",
+      "name": "Waterside Platinum Yacht Night",
+      "bettabukzPrice": 1740,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "silver",
+      "district": "military_hwy",
+      "respect": 33,
+      "businessBoost": 12,
+      "homeComfort": 0
+    },
+    {
+      "id": "excl_008",
+      "name": "NEON Creator Suite",
+      "bettabukzPrice": 1980,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "gold",
+      "district": "ward_corner",
+      "respect": 36,
+      "businessBoost": 0,
+      "homeComfort": 4
+    },
+    {
+      "id": "excl_009",
+      "name": "Attucks Legacy Studio Pass",
+      "bettabukzPrice": 2220,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "platinum",
+      "district": "odu_lambert",
+      "respect": 39,
+      "businessBoost": 2,
+      "homeComfort": 8
+    },
+    {
+      "id": "excl_010",
+      "name": "Ocean View Estate Pool Upgrade",
+      "bettabukzPrice": 2460,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "founder",
+      "district": "berkley_bridge",
+      "respect": 42,
+      "businessBoost": 4,
+      "homeComfort": 12
+    },
+    {
+      "id": "excl_011",
+      "name": "VIP Pet Concierge",
+      "bettabukzPrice": 2700,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "bronze",
+      "district": "downtown_granby",
+      "respect": 45,
+      "businessBoost": 6,
+      "homeComfort": 16
+    },
+    {
+      "id": "excl_012",
+      "name": "Founder Vehicle Showcase",
+      "bettabukzPrice": 2940,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "silver",
+      "district": "neon_arts",
+      "respect": 48,
+      "businessBoost": 8,
+      "homeComfort": 20
+    },
+    {
+      "id": "excl_013",
+      "name": "Granby Rooftop Penthouse Party",
+      "bettabukzPrice": 3180,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "gold",
+      "district": "church_attucks",
+      "respect": 51,
+      "businessBoost": 10,
+      "homeComfort": 0
+    },
+    {
+      "id": "excl_014",
+      "name": "Gold Chain Avatar Pack",
+      "bettabukzPrice": 3420,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "platinum",
+      "district": "waterside",
+      "respect": 54,
+      "businessBoost": 12,
+      "homeComfort": 4
+    },
+    {
+      "id": "excl_015",
+      "name": "Premium Race Entry Bundle",
+      "bettabukzPrice": 3660,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "founder",
+      "district": "ghent",
+      "respect": 57,
+      "businessBoost": 0,
+      "homeComfort": 8
+    },
+    {
+      "id": "excl_016",
+      "name": "Betta Motors Executive Dealership",
+      "bettabukzPrice": 3900,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "bronze",
+      "district": "ocean_view",
+      "respect": 60,
+      "businessBoost": 2,
+      "homeComfort": 12
+    },
+    {
+      "id": "excl_017",
+      "name": "Luxury Arena Billboard Slot",
+      "bettabukzPrice": 4140,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "silver",
+      "district": "military_hwy",
+      "respect": 63,
+      "businessBoost": 4,
+      "homeComfort": 16
+    },
+    {
+      "id": "excl_018",
+      "name": "Platinum Housing Concierge",
+      "bettabukzPrice": 4380,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "gold",
+      "district": "ward_corner",
+      "respect": 66,
+      "businessBoost": 6,
+      "homeComfort": 20
+    },
+    {
+      "id": "excl_019",
+      "name": "Founder Daily Rewards Chest",
+      "bettabukzPrice": 4620,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "platinum",
+      "district": "odu_lambert",
+      "respect": 69,
+      "businessBoost": 8,
+      "homeComfort": 0
+    },
+    {
+      "id": "excl_020",
+      "name": "BettaBukz Diamond Card",
+      "bettabukzPrice": 4860,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "founder",
+      "district": "berkley_bridge",
+      "respect": 72,
+      "businessBoost": 10,
+      "homeComfort": 4
+    }
+  ],
+  "races": [
+    {
+      "id": "race_01",
+      "name": "Waterside Neon Loop",
+      "entryFee": 250,
+      "bettabukzEntry": 5,
+      "rewardCash": 900,
+      "rewardBettaBukz": 20,
+      "rewardXp": 75,
+      "requiredClass": "tuner",
+      "laps": 2
+    },
+    {
+      "id": "race_02",
+      "name": "Granby Sprint",
+      "entryFee": 550,
+      "bettabukzEntry": 8,
+      "rewardCash": 1800,
+      "rewardBettaBukz": 35,
+      "rewardXp": 100,
+      "requiredClass": "lowrider",
+      "laps": 3
+    },
+    {
+      "id": "race_03",
+      "name": "Ocean View Sunset Circuit",
+      "entryFee": 850,
+      "bettabukzEntry": 11,
+      "rewardCash": 2700,
+      "rewardBettaBukz": 50,
+      "rewardXp": 125,
+      "requiredClass": "luxury",
+      "laps": 4
+    },
+    {
+      "id": "race_04",
+      "name": "Military Highway Drag",
+      "entryFee": 1150,
+      "bettabukzEntry": 14,
+      "rewardCash": 3600,
+      "rewardBettaBukz": 65,
+      "rewardXp": 150,
+      "requiredClass": "exotic",
+      "laps": 5
+    },
+    {
+      "id": "race_05",
+      "name": "Attucks Legacy Cup",
+      "entryFee": 1450,
+      "bettabukzEntry": 17,
+      "rewardCash": 4500,
+      "rewardBettaBukz": 80,
+      "rewardXp": 175,
+      "requiredClass": "custom",
+      "laps": 2
+    },
+    {
+      "id": "race_06",
+      "name": "NEON Mural Drift",
+      "entryFee": 1750,
+      "bettabukzEntry": 20,
+      "rewardCash": 5400,
+      "rewardBettaBukz": 95,
+      "rewardXp": 200,
+      "requiredClass": "tuner",
+      "laps": 3
+    },
+    {
+      "id": "race_07",
+      "name": "Ghent Classic Tour",
+      "entryFee": 2050,
+      "bettabukzEntry": 23,
+      "rewardCash": 6300,
+      "rewardBettaBukz": 110,
+      "rewardXp": 225,
+      "requiredClass": "lowrider",
+      "laps": 4
+    },
+    {
+      "id": "race_08",
+      "name": "Berkley Bridge Run",
+      "entryFee": 2350,
+      "bettabukzEntry": 26,
+      "rewardCash": 7200,
+      "rewardBettaBukz": 125,
+      "rewardXp": 250,
+      "requiredClass": "luxury",
+      "laps": 5
+    },
+    {
+      "id": "race_09",
+      "name": "Lambert Night Circuit",
+      "entryFee": 2650,
+      "bettabukzEntry": 29,
+      "rewardCash": 8100,
+      "rewardBettaBukz": 140,
+      "rewardXp": 275,
+      "requiredClass": "exotic",
+      "laps": 2
+    },
+    {
+      "id": "race_10",
+      "name": "757 Grand Prix",
+      "entryFee": 2950,
+      "bettabukzEntry": 32,
+      "rewardCash": 9000,
+      "rewardBettaBukz": 155,
+      "rewardXp": 300,
+      "requiredClass": "custom",
+      "laps": 3
+    }
+  ]
+}

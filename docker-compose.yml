@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      JWT_SECRET: change-this
+      ADMIN_BOOTSTRAP_KEY: change-this-admin-bootstrap-key
+    volumes: ["bd_data:/app/data"]
+volumes:
+  bd_data:

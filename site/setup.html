@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BettaDayz Setup</title><link rel="stylesheet" href="./styles.css"></head><body><nav><strong>BettaDayz RP</strong><a href="./index.html">Home</a><a href="./play-demo.html">Play Demo</a><a href="./catalog.html">Catalog</a></nav><main class="page"><h1>Setup the Full Game</h1><section class="panel"><h2>Run locally</h2><pre><code>npm install
+cp .env.example .env
+npm run local</code></pre><p>Open <code>http://localhost:3000</code>. GitHub Pages hosts the static website/demo only; the multiplayer server uses Node.js, WebSockets, and SQLite, so the full backend must run locally or on a Node-capable host.</p></section><section class="panel"><h2>Push to GitHub</h2><pre><code>git init
+git add .
+git commit -m "BettaDayz RP v1"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/bettadayz-rp.git
+git push -u origin main</code></pre></section><section class="panel"><h2>Enable GitHub Pages</h2><ol><li>Open the repository on GitHub.</li><li>Go to <b>Settings → Pages</b>.</li><li>Under <b>Build and deployment</b>, set <b>Source</b> to <b>GitHub Actions</b>.</li><li>Push to <code>main</code>. The included workflow deploys the <code>site/</code> folder.</li></ol></section></main></body></html>

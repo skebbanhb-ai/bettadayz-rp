@@ -1,0 +1,1 @@
+const{contextBridge}=require('electron');contextBridge.exposeInMainWorld('BettaDayzDesktop',{desktop:true,platform:process.platform});

@@ -1,0 +1,11 @@
+{
+  "startingCash": 3250,
+  "dailyRewards": {
+    "baseCash": 250,
+    "baseXp": 35,
+    "baseBettaBukz": 10
+  },
+  "leveling": {
+    "xpPerLevel": 500
+  }
+}

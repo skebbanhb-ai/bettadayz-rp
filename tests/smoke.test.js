@@ -1,0 +1,1 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs');test('core files exist',()=>['server/server.js','public/index.html','public/bettabukz.html','public/catalog.html','data/content/bettabukz.json'].forEach(f=>assert.ok(fs.existsSync(f))));

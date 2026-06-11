@@ -1,0 +1,1 @@
+const fs=require('fs');if(!fs.existsSync('public/assets/generated/atlas.json'))process.exit(1);console.log('Sprite atlas ready.');

@@ -1,0 +1,6 @@
+{
+  "appId": "com.bettadayz.rp",
+  "appName": "BettaDayz RP",
+  "webDir": "public",
+  "bundledWebRuntime": false
+}

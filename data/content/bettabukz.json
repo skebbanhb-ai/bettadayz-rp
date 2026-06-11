@@ -1,0 +1,337 @@
+{
+  "currency": {
+    "id": "bettabukz",
+    "name": "BettaBukz",
+    "symbol": "BBZ",
+    "display": "\u20bfB",
+    "startingBalance": 250,
+    "dailyBase": 10,
+    "description": "BettaDayz premium virtual currency for exclusive catalog, member tiers, race perks, cosmetics, housing upgrades, pets, and arena perks."
+  },
+  "earnSources": [
+    {
+      "id": "daily",
+      "name": "Daily Rewards",
+      "amount": 10
+    },
+    {
+      "id": "race_win",
+      "name": "BettaKarts Win",
+      "amount": 20
+    },
+    {
+      "id": "quest",
+      "name": "Quest Bonus",
+      "amount": 15
+    },
+    {
+      "id": "event",
+      "name": "Community Event",
+      "amount": 25
+    }
+  ],
+  "memberTiers": [
+    {
+      "id": "free",
+      "name": "Free Player",
+      "bettabukzCost": 0,
+      "dailyBettaBukz": 10,
+      "cashBonusPct": 0,
+      "queuePriority": 0,
+      "garageBonus": 0,
+      "exclusiveTag": "standard"
+    },
+    {
+      "id": "bronze",
+      "name": "Betta Bronze",
+      "bettabukzCost": 500,
+      "dailyBettaBukz": 25,
+      "cashBonusPct": 5,
+      "queuePriority": 1,
+      "garageBonus": 1,
+      "exclusiveTag": "bronze"
+    },
+    {
+      "id": "silver",
+      "name": "Betta Silver",
+      "bettabukzCost": 1500,
+      "dailyBettaBukz": 60,
+      "cashBonusPct": 10,
+      "queuePriority": 2,
+      "garageBonus": 2,
+      "exclusiveTag": "silver"
+    },
+    {
+      "id": "gold",
+      "name": "Betta Gold",
+      "bettabukzCost": 4500,
+      "dailyBettaBukz": 150,
+      "cashBonusPct": 15,
+      "queuePriority": 3,
+      "garageBonus": 3,
+      "exclusiveTag": "gold"
+    },
+    {
+      "id": "platinum",
+      "name": "Betta Platinum",
+      "bettabukzCost": 12000,
+      "dailyBettaBukz": 400,
+      "cashBonusPct": 22,
+      "queuePriority": 4,
+      "garageBonus": 5,
+      "exclusiveTag": "platinum"
+    },
+    {
+      "id": "founder",
+      "name": "Betta Founder",
+      "bettabukzCost": 30000,
+      "dailyBettaBukz": 1000,
+      "cashBonusPct": 30,
+      "queuePriority": 5,
+      "garageBonus": 8,
+      "exclusiveTag": "founder"
+    }
+  ],
+  "exclusivePurchases": [
+    {
+      "id": "excl_001",
+      "name": "BettaKarts Founder Garage Bay",
+      "bettabukzPrice": 300,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "bronze",
+      "district": "downtown_granby",
+      "respect": 15,
+      "businessBoost": 0,
+      "homeComfort": 0
+    },
+    {
+      "id": "excl_002",
+      "name": "Luxury Arena Skybox",
+      "bettabukzPrice": 540,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "silver",
+      "district": "neon_arts",
+      "respect": 18,
+      "businessBoost": 2,
+      "homeComfort": 4
+    },
+    {
+      "id": "excl_003",
+      "name": "VIP Neon Crown Nameplate",
+      "bettabukzPrice": 780,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "gold",
+      "district": "church_attucks",
+      "respect": 21,
+      "businessBoost": 4,
+      "homeComfort": 8
+    },
+    {
+      "id": "excl_004",
+      "name": "Founder-Only Gold Kart Wrap",
+      "bettabukzPrice": 1020,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "platinum",
+      "district": "waterside",
+      "respect": 24,
+      "businessBoost": 6,
+      "homeComfort": 12
+    },
+    {
+      "id": "excl_005",
+      "name": "Daily Rewards Multiplier Token",
+      "bettabukzPrice": 1260,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "founder",
+      "district": "ghent",
+      "respect": 27,
+      "businessBoost": 8,
+      "homeComfort": 16
+    },
+    {
+      "id": "excl_006",
+      "name": "BettaBukz Vault Safe",
+      "bettabukzPrice": 1500,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "bronze",
+      "district": "ocean_view",
+      "respect": 30,
+      "businessBoost": 10,
+      "homeComfort": 20
+    },
+    {
+      "id": "excl_007",
+      "name": "Waterside Platinum Yacht Night",
+      "bettabukzPrice": 1740,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "silver",
+      "district": "military_hwy",
+      "respect": 33,
+      "businessBoost": 12,
+      "homeComfort": 0
+    },
+    {
+      "id": "excl_008",
+      "name": "NEON Creator Suite",
+      "bettabukzPrice": 1980,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "gold",
+      "district": "ward_corner",
+      "respect": 36,
+      "businessBoost": 0,
+      "homeComfort": 4
+    },
+    {
+      "id": "excl_009",
+      "name": "Attucks Legacy Studio Pass",
+      "bettabukzPrice": 2220,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "platinum",
+      "district": "odu_lambert",
+      "respect": 39,
+      "businessBoost": 2,
+      "homeComfort": 8
+    },
+    {
+      "id": "excl_010",
+      "name": "Ocean View Estate Pool Upgrade",
+      "bettabukzPrice": 2460,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "founder",
+      "district": "berkley_bridge",
+      "respect": 42,
+      "businessBoost": 4,
+      "homeComfort": 12
+    },
+    {
+      "id": "excl_011",
+      "name": "VIP Pet Concierge",
+      "bettabukzPrice": 2700,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "bronze",
+      "district": "downtown_granby",
+      "respect": 45,
+      "businessBoost": 6,
+      "homeComfort": 16
+    },
+    {
+      "id": "excl_012",
+      "name": "Founder Vehicle Showcase",
+      "bettabukzPrice": 2940,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "silver",
+      "district": "neon_arts",
+      "respect": 48,
+      "businessBoost": 8,
+      "homeComfort": 20
+    },
+    {
+      "id": "excl_013",
+      "name": "Granby Rooftop Penthouse Party",
+      "bettabukzPrice": 3180,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "gold",
+      "district": "church_attucks",
+      "respect": 51,
+      "businessBoost": 10,
+      "homeComfort": 0
+    },
+    {
+      "id": "excl_014",
+      "name": "Gold Chain Avatar Pack",
+      "bettabukzPrice": 3420,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "platinum",
+      "district": "waterside",
+      "respect": 54,
+      "businessBoost": 12,
+      "homeComfort": 4
+    },
+    {
+      "id": "excl_015",
+      "name": "Premium Race Entry Bundle",
+      "bettabukzPrice": 3660,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "founder",
+      "district": "ghent",
+      "respect": 57,
+      "businessBoost": 0,
+      "homeComfort": 8
+    },
+    {
+      "id": "excl_016",
+      "name": "Betta Motors Executive Dealership",
+      "bettabukzPrice": 3900,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "bronze",
+      "district": "ocean_view",
+      "respect": 60,
+      "businessBoost": 2,
+      "homeComfort": 12
+    },
+    {
+      "id": "excl_017",
+      "name": "Luxury Arena Billboard Slot",
+      "bettabukzPrice": 4140,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "silver",
+      "district": "military_hwy",
+      "respect": 63,
+      "businessBoost": 4,
+      "homeComfort": 16
+    },
+    {
+      "id": "excl_018",
+      "name": "Platinum Housing Concierge",
+      "bettabukzPrice": 4380,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "gold",
+      "district": "ward_corner",
+      "respect": 66,
+      "businessBoost": 6,
+      "homeComfort": 20
+    },
+    {
+      "id": "excl_019",
+      "name": "Founder Daily Rewards Chest",
+      "bettabukzPrice": 4620,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "platinum",
+      "district": "odu_lambert",
+      "respect": 69,
+      "businessBoost": 8,
+      "homeComfort": 0
+    },
+    {
+      "id": "excl_020",
+      "name": "BettaBukz Diamond Card",
+      "bettabukzPrice": 4860,
+      "cashPrice": 0,
+      "category": "exclusive",
+      "tierRequired": "founder",
+      "district": "berkley_bridge",
+      "respect": 72,
+      "businessBoost": 10,
+      "homeComfort": 4
+    }
+  ]
+}

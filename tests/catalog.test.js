@@ -1,0 +1,1 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs');test('bettabukz catalog counts',()=>{const c=JSON.parse(fs.readFileSync('data/content/catalog.json','utf8'));assert.equal(c.vehicles.length,100);assert.equal(c.homes.length,50);assert.equal(c.shops.length,20);assert.ok(c.exclusivePurchases.length>=20);assert.ok(c.memberTiers.length>=6);});

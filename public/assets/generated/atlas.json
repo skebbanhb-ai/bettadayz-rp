@@ -1,0 +1,48 @@
+{
+  "image": "/assets/generated/bettadayz-atlas.png",
+  "animations": {
+    "player_walk": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "duration": 160
+      },
+      {
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 32,
+        "duration": 160
+      }
+    ],
+    "npc_civilian": [
+      {
+        "x": 0,
+        "y": 64,
+        "w": 32,
+        "h": 32,
+        "duration": 200
+      }
+    ],
+    "vehicle_exotic": [
+      {
+        "x": 0,
+        "y": 32,
+        "w": 48,
+        "h": 24,
+        "duration": 250
+      }
+    ],
+    "vehicle_lowrider": [
+      {
+        "x": 48,
+        "y": 32,
+        "w": 48,
+        "h": 24,
+        "duration": 250
+      }
+    ]
+  }
+}
