@@ -6,6 +6,7 @@
   "scripts": {
     "local": "node server/server.js",
     "start": "node server/server.js",
+    "build": "node -e \"console.log('Static web assets ready for Capacitor sync.')\"",
     "pc": "electron desktop/main.js",
     "desktop": "electron desktop/main.js",
     "pc:build": "electron-builder --win nsis portable",
@@ -20,9 +21,11 @@
     "ios:xcode": "npx cap open ios"
   },
   "dependencies": {
-    "@capacitor/core": "^8.3.4",
+    "@capacitor/android": "^8.4.0",
     "@capacitor/app": "^8.0.0",
+    "@capacitor/core": "^8.4.0",
     "@capacitor/haptics": "^8.0.0",
+    "@capacitor/ios": "^8.4.0",
     "@capacitor/keyboard": "^8.0.0",
     "@capacitor/splash-screen": "^8.0.0",
     "@capacitor/status-bar": "^8.0.0",
@@ -38,7 +41,7 @@
     "ws": "^8.18.0"
   },
   "devDependencies": {
-    "@capacitor/cli": "^8.3.4",
+    "@capacitor/cli": "^8.4.0",
     "electron": "^31.7.7",
     "electron-builder": "^26.0.12"
   },
