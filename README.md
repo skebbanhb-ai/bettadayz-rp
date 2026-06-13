@@ -72,7 +72,7 @@ GitHub Pages is for the static website and static demo. The full multiplayer gam
 
 - Live site: https://skebbanhb-ai.github.io/bettadayz-rp/
 
-- This repository's GitHub Actions workflow deploys the `public/` folder to Pages. To update the published site, modify files under `public/` and push to `main`.
+- This repository's GitHub Actions workflow deploys the `site/` folder to Pages. To update the published site, modify files under `site/` and push to `main`.
 
 - Key files:
 	- `.github/workflows/deploy-pages.yml` — Pages workflow
