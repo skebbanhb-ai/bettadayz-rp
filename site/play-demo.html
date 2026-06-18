@@ -30,6 +30,7 @@
       <span><b>Level</b><br><em id="level">1</em> - <em id="xp">0</em> XP</span>
       <span><b>Zone</b><br><em id="zone">Granby Row</em></span>
       <span><b>Boost</b><br><em id="boost">Shift</em></span>
+      <span><b>Vehicle</b><br><em id="vehicle">Press F near car</em></span>
     </section>
     <canvas id="game" width="1100" height="600"></canvas>
   </main>
@@ -40,9 +41,10 @@
     const keys = {};
     const particles = [];
     const world = { width: 2000, height: 1200 };
-    const player = { x: 180, y: 180, vx: 0, vy: 0, cash: 3250, bbz: 250, xp: 0, level: 1, mission: 0 };
+    const player = { x: 180, y: 180, vx: 0, vy: 0, cash: 3250, bbz: 250, xp: 0, level: 1, mission: 0, inCar: null };
     const camera = { x: 0, y: 0 };
     let audioContext = null;
+    let engineSound = null;
     const zones = [
       { name: 'Granby Row', x: 220, y: 190, r: 74, color: '#22c55e' },
       { name: 'NEON Arts', x: 480, y: 260, r: 82, color: '#a855f7' },
@@ -50,6 +52,22 @@
       { name: 'BettaKarts Arena', x: 900, y: 360, r: 92, color: '#d946ef' },
       { name: 'Ocean View', x: 620, y: 455, r: 78, color: '#38bdf8' }
     ];
+    const buildings = [
+      { x: 560, y: 360, w: 145, h: 125 },
+      { x: 1160, y: 760, w: 170, h: 150 },
+      { x: 320, y: 740, w: 120, h: 180 },
+      { x: 910, y: 120, w: 210, h: 110 },
+      { x: 1480, y: 350, w: 160, h: 210 },
+      { x: 1580, y: 870, w: 220, h: 125 }
+    ];
+    const cars = Array.from({ length: 9 }, (_, index) => ({
+      x: 130 + Math.random() * (world.width - 260),
+      y: 130 + Math.random() * (world.height - 260),
+      vx: 0,
+      vy: 0,
+      angle: Math.random() * Math.PI * 2,
+      color: ['#22c55e', '#38bdf8', '#facc15', '#a855f7'][index % 4]
+    }));
     let coins = makeCoins();
 
     function makeCoins() {
@@ -67,6 +85,7 @@
     addEventListener('keydown', (event) => {
       keys[event.key.toLowerCase()] = true;
       if (event.key === 'Shift') keys.shift = true;
+      if (event.key.toLowerCase() === 'f') toggleVehicle();
     });
     addEventListener('keyup', (event) => {
       keys[event.key.toLowerCase()] = false;
@@ -94,11 +113,67 @@
       }
     }
 
-    function burst(x, y) {
-      for (let i = 0; i < 18; i++) {
+    function setEngineSound(active) {
+      try {
+        audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
+        if (audioContext.state === 'suspended') audioContext.resume();
+        if (!active) {
+          if (engineSound) {
+            engineSound.gain.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + 0.12);
+            engineSound.osc.stop(audioContext.currentTime + 0.14);
+            engineSound = null;
+          }
+          return;
+        }
+        if (engineSound) return;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.value = 74;
+        gain.gain.value = 0.0001;
+        gain.gain.exponentialRampToValueAtTime(0.045, audioContext.currentTime + 0.12);
+        osc.connect(gain).connect(audioContext.destination);
+        osc.start();
+        engineSound = { osc, gain };
+      } catch {
+        /* Engine sound is optional in static demo mode. */
+      }
+    }
+
+    function updateEnginePitch(speed) {
+      if (!engineSound || !audioContext) return;
+      engineSound.osc.frequency.setTargetAtTime(70 + speed * 11, audioContext.currentTime, 0.05);
+    }
+
+    function toggleVehicle() {
+      if (player.inCar) {
+        const car = player.inCar;
+        player.x = car.x + Math.cos(car.angle + Math.PI / 2) * 34;
+        player.y = car.y + Math.sin(car.angle + Math.PI / 2) * 34;
+        player.vx = car.vx * 0.3;
+        player.vy = car.vy * 0.3;
+        player.inCar = null;
+        setEngineSound(false);
+        vehicle.textContent = 'Press F near car';
+        return;
+      }
+      const nearest = cars
+        .map((car) => ({ car, d: Math.hypot(player.x - car.x, player.y - car.y) }))
+        .sort((a, b) => a.d - b.d)[0];
+      if (nearest && nearest.d < 48) {
+        player.inCar = nearest.car;
+        player.x = nearest.car.x;
+        player.y = nearest.car.y;
+        setEngineSound(true);
+        vehicle.textContent = 'Driving - F exits';
+      }
+    }
+
+    function burst(x, y, color = '#facc15', count = 18) {
+      for (let i = 0; i < count; i++) {
         const a = Math.random() * Math.PI * 2;
         const s = 1 + Math.random() * 4;
-        particles.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - 1, life: 1 });
+        particles.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - 1, life: 1, color });
       }
     }
 
@@ -127,19 +202,52 @@
       const dy = (keys.s || keys.arrowdown ? 1 : 0) - (keys.w || keys.arrowup ? 1 : 0);
       const len = Math.hypot(dx, dy) || 1;
       const boostOn = !!keys.shift;
-      const accel = boostOn ? 0.68 : 0.42;
-      const maxSpeed = boostOn ? 9.5 : 6.2;
-      player.vx += (dx / len) * accel;
-      player.vy += (dy / len) * accel;
-      player.vx *= 0.91;
-      player.vy *= 0.91;
-      const speed = Math.hypot(player.vx, player.vy);
-      if (speed > maxSpeed) {
-        player.vx = player.vx / speed * maxSpeed;
-        player.vy = player.vy / speed * maxSpeed;
+      if (player.inCar) {
+        const car = player.inCar;
+        const accel = boostOn ? 0.62 : 0.42;
+        if (keys.a || keys.arrowleft) car.angle -= 0.055;
+        if (keys.d || keys.arrowright) car.angle += 0.055;
+        if (keys.w || keys.arrowup) {
+          car.vx += Math.cos(car.angle) * accel;
+          car.vy += Math.sin(car.angle) * accel;
+        }
+        if (keys.s || keys.arrowdown) {
+          car.vx -= Math.cos(car.angle) * accel * 0.62;
+          car.vy -= Math.sin(car.angle) * accel * 0.62;
+        }
+        car.vx *= 0.955;
+        car.vy *= 0.955;
+        const speed = Math.hypot(car.vx, car.vy);
+        const maxSpeed = boostOn ? 13.8 : 10.2;
+        if (speed > maxSpeed) {
+          car.vx = car.vx / speed * maxSpeed;
+          car.vy = car.vy / speed * maxSpeed;
+        }
+        car.x = Math.max(28, Math.min(world.width - 28, car.x + car.vx));
+        car.y = Math.max(28, Math.min(world.height - 28, car.y + car.vy));
+        player.x = car.x;
+        player.y = car.y;
+        player.vx = car.vx;
+        player.vy = car.vy;
+        updateEnginePitch(speed);
+        if (speed > 3 && Math.random() < 0.45) {
+          burst(car.x - Math.cos(car.angle) * 28, car.y - Math.sin(car.angle) * 28, 'rgba(148,163,184,.75)', 2);
+        }
+      } else {
+        const accel = boostOn ? 0.68 : 0.42;
+        const maxSpeed = boostOn ? 9.5 : 6.2;
+        player.vx += (dx / len) * accel;
+        player.vy += (dy / len) * accel;
+        player.vx *= 0.91;
+        player.vy *= 0.91;
+        const speed = Math.hypot(player.vx, player.vy);
+        if (speed > maxSpeed) {
+          player.vx = player.vx / speed * maxSpeed;
+          player.vy = player.vy / speed * maxSpeed;
+        }
+        player.x = Math.max(20, Math.min(world.width - 20, player.x + player.vx));
+        player.y = Math.max(20, Math.min(world.height - 20, player.y + player.vy));
       }
-      player.x = Math.max(20, Math.min(world.width - 20, player.x + player.vx));
-      player.y = Math.max(20, Math.min(world.height - 20, player.y + player.vy));
       boost.textContent = boostOn ? 'Active' : 'Shift';
       camera.x += (player.x - canvas.width / 2 - camera.x) * 0.12;
       camera.y += (player.y - canvas.height / 2 - camera.y) * 0.12;
@@ -162,6 +270,19 @@
         ctx.moveTo(0, y);
         ctx.lineTo(world.width, y);
         ctx.stroke();
+      }
+
+      for (const block of buildings) {
+        ctx.fillStyle = '#1e293b';
+        ctx.fillRect(block.x, block.y, block.w, block.h);
+        ctx.strokeStyle = 'rgba(34,211,238,.18)';
+        ctx.strokeRect(block.x, block.y, block.w, block.h);
+        ctx.fillStyle = 'rgba(250,204,21,.18)';
+        for (let wx = block.x + 18; wx < block.x + block.w - 12; wx += 34) {
+          for (let wy = block.y + 18; wy < block.y + block.h - 12; wy += 34) {
+            ctx.fillRect(wx, wy, 10, 10);
+          }
+        }
       }
 
       let nearest = zones[0];
@@ -200,6 +321,22 @@
       }
       if (remaining === 0) coins = makeCoins();
 
+      for (const car of cars) {
+        ctx.save();
+        ctx.translate(car.x, car.y);
+        ctx.rotate(car.angle);
+        ctx.shadowColor = car === player.inCar ? '#facc15' : car.color;
+        ctx.shadowBlur = car === player.inCar ? 18 : 8;
+        ctx.fillStyle = car.color;
+        ctx.fillRect(-24, -12, 48, 24);
+        ctx.fillStyle = '#0f172a';
+        ctx.fillRect(-4, -10, 16, 20);
+        ctx.fillStyle = '#e2e8f0';
+        ctx.fillRect(13, -8, 8, 16);
+        ctx.shadowBlur = 0;
+        ctx.restore();
+      }
+
       for (let i = particles.length - 1; i >= 0; i--) {
         const p = particles[i];
         p.x += p.vx;
@@ -207,7 +344,7 @@
         p.vy += 0.05;
         p.life *= 0.95;
         ctx.globalAlpha = p.life;
-        ctx.fillStyle = '#facc15';
+        ctx.fillStyle = p.color || '#facc15';
         ctx.beginPath();
         ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
         ctx.fill();
@@ -217,20 +354,22 @@
 
       const moving = Math.abs(dx) + Math.abs(dy) > 0;
       const frame = moving ? Math.floor(performance.now() / 160) % 2 : 0;
-      ctx.fillStyle = '#38bdf8';
-      ctx.beginPath();
-      ctx.arc(player.x, player.y, 14, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.strokeStyle = frame ? '#facc15' : '#ffffff';
-      ctx.lineWidth = 3;
-      ctx.beginPath();
-      ctx.moveTo(player.x - 9, player.y + 14);
-      ctx.lineTo(player.x - (frame ? 15 : 7), player.y + 25);
-      ctx.moveTo(player.x + 9, player.y + 14);
-      ctx.lineTo(player.x + (frame ? 7 : 15), player.y + 25);
-      ctx.stroke();
-      ctx.fillStyle = '#ffffff';
-      ctx.fillText('Player', player.x, player.y - 24);
+      if (!player.inCar) {
+        ctx.fillStyle = '#38bdf8';
+        ctx.beginPath();
+        ctx.arc(player.x, player.y, 14, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = frame ? '#facc15' : '#ffffff';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(player.x - 9, player.y + 14);
+        ctx.lineTo(player.x - (frame ? 15 : 7), player.y + 25);
+        ctx.moveTo(player.x + 9, player.y + 14);
+        ctx.lineTo(player.x + (frame ? 7 : 15), player.y + 25);
+        ctx.stroke();
+        ctx.fillStyle = '#ffffff';
+        ctx.fillText('Player', player.x, player.y - 24);
+      }
       ctx.restore();
     }
     loop();

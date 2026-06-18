@@ -1,3 +1,3 @@
 Drop optional replacement sound files here.
 
-The static demo currently uses WebAudio for the coin sound, so it works without a binary asset. If you add `coin.wav`, you can swap `playCoinSound()` in `site/play-demo.html` to use `new Audio('./assets/sfx/coin.wav')`.
+The static demo currently uses WebAudio for coin and engine sounds, so it works without binary assets. If you add `coin.wav` or `engine.wav`, you can swap the WebAudio helpers in `site/play-demo.html` to use `new Audio('./assets/sfx/coin.wav')` or `new Audio('./assets/sfx/engine.wav')`.
