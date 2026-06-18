@@ -3,7 +3,7 @@
     "id": "bettabukz",
     "name": "BettaBukz",
     "symbol": "BBZ",
-    "display": "\u20bfB",
+    "display": "₿B",
     "startingBalance": 250,
     "dailyBase": 10,
     "description": "BettaDayz premium virtual currency for exclusive catalog, member tiers, race perks, cosmetics, housing upgrades, pets, and arena perks."
@@ -12,7 +12,23 @@
     {
       "id": "daily",
       "name": "Daily Rewards",
-      "amount": 10
+      "amount": 10,
+      "cooldownHours": 24
+    },
+    {
+      "id": "job_taxi",
+      "name": "Taxi Job",
+      "amount": 6
+    },
+    {
+      "id": "job_police",
+      "name": "Police Job",
+      "amount": 8
+    },
+    {
+      "id": "job_delivery",
+      "name": "Delivery Job",
+      "amount": 5
     },
     {
       "id": "race_win",
@@ -20,12 +36,12 @@
       "amount": 20
     },
     {
-      "id": "quest",
-      "name": "Quest Bonus",
-      "amount": 15
+      "id": "starter_mission",
+      "name": "Starter Mission",
+      "amount": 25
     },
     {
-      "id": "event",
+      "id": "community_event",
       "name": "Community Event",
       "amount": 25
     }
@@ -333,5 +349,25 @@
       "businessBoost": 10,
       "homeComfort": 4
     }
-  ]
+  ],
+  "economyControls": {
+    "maxEarnPerDay": 500,
+    "inflationControl": {
+      "enabled": false,
+      "mode": "placeholder",
+      "notes": "Future tuning hook for dynamic BBZ sinks, rotating shop prices, and earn-rate balancing."
+    },
+    "sinkCategories": [
+      "member_tiers",
+      "vehicles",
+      "exclusive_items",
+      "pets",
+      "housing"
+    ],
+    "antiAbuse": {
+      "serverValidatedRewards": true,
+      "rateLimitedActions": true,
+      "purchaseValueValidation": true
+    }
+  }
 }

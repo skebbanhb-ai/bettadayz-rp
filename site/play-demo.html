@@ -1,1 +1,239 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BettaDayz Web Demo</title><link rel="stylesheet" href="./styles.css"></head><body><nav><strong>BettaDayz RP</strong><a href="./index.html">Home</a><a href="./catalog.html">Catalog</a><a href="./setup.html">Setup</a></nav><main class="page"><h1>Static Web Demo</h1><p class="lead">This GitHub Pages version is a static first demo. Move with WASD/arrow keys, collect BettaBukz, and drive to the BettaKarts Arena marker. The full multiplayer version runs locally with Node.js.</p><section class="panel"><p><b>Cash:</b> $<span id="cash">3250</span> · <b class="bbz">BettaBukz:</b> <span id="bbz">250</span> BBZ · <b>Zone:</b> <span id="zone">Granby Row</span></p><canvas id="game" width="1100" height="540"></canvas></section></main><script>const c=document.getElementById('game'),ctx=c.getContext('2d');let p={x:180,y:180,cash:3250,bbz:250};const keys={};const zones=[['Granby Row',220,190,'#22c55e'],['NEON Arts',480,260,'#a855f7'],['Waterside',720,210,'#facc15'],['BettaKarts Arena',900,350,'#d946ef'],['Ocean View',620,430,'#38bdf8']];const coins=Array.from({length:28},(_,i)=>({x:80+Math.random()*940,y:80+Math.random()*380,on:true}));addEventListener('keydown',e=>{keys[e.key.toLowerCase()]=true});addEventListener('keyup',e=>{keys[e.key.toLowerCase()]=false});function loop(){requestAnimationFrame(loop);let dx=(keys.d||keys.arrowright?1:0)-(keys.a||keys.arrowleft?1:0),dy=(keys.s||keys.arrowdown?1:0)-(keys.w||keys.arrowup?1:0),l=Math.hypot(dx,dy)||1;p.x=Math.max(20,Math.min(c.width-20,p.x+dx/l*4));p.y=Math.max(20,Math.min(c.height-20,p.y+dy/l*4));ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle='#020617';ctx.fillRect(0,0,c.width,c.height);for(const z of zones){ctx.strokeStyle=z[3];ctx.beginPath();ctx.arc(z[1],z[2],70,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#cbd5e1';ctx.fillText(z[0],z[1]-35,z[2])}for(const coin of coins)if(coin.on){ctx.fillStyle='#facc15';ctx.beginPath();ctx.arc(coin.x,coin.y,7,0,Math.PI*2);ctx.fill();if(Math.hypot(p.x-coin.x,p.y-coin.y)<18){coin.on=false;p.bbz+=10;bbz.textContent=p.bbz}}let nearest=zones.map(z=>[z[0],Math.hypot(p.x-z[1],p.y-z[2])]).sort((a,b)=>a[1]-b[1])[0];zone.textContent=nearest[0];ctx.fillStyle='#84cc16';ctx.beginPath();ctx.arc(p.x,p.y,14,0,Math.PI*2);ctx.fill();ctx.fillStyle='white';ctx.fillText('Player',p.x-16,p.y-20)}loop()</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BettaDayz Web Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    body { overflow-x: hidden; }
+    .demo-wrap { max-width: 1180px; margin: 0 auto; padding: 24px; }
+    .demo-hud { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0; }
+    .demo-hud span { display: block; border: 1px solid rgba(34,211,238,.18); border-radius: 8px; padding: 10px; background: rgba(2,6,23,.72); }
+    #game { width: 100%; height: min(62vh, 620px); border: 1px solid rgba(34,211,238,.28); border-radius: 8px; background: #020617; display: block; }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>BettaDayz RP</strong>
+    <a href="./index.html">Home</a>
+    <a href="./catalog.html">Catalog</a>
+    <a href="./setup.html">Setup</a>
+  </nav>
+  <main class="demo-wrap">
+    <h1>Static Web Demo</h1>
+    <p class="lead">Move with WASD or arrow keys, collect BettaBukz, and visit city zones. The full multiplayer server adds jobs, missions, dealership saves, voice, admin tools, and leaderboards.</p>
+    <section class="demo-hud">
+      <span><b>Cash</b><br>$<em id="cash">3250</em></span>
+      <span><b class="bbz">BettaBukz</b><br><em id="bbz">250</em> BBZ</span>
+      <span><b>Mission</b><br><em id="mission">0</em>/3 activities</span>
+      <span><b>Level</b><br><em id="level">1</em> - <em id="xp">0</em> XP</span>
+      <span><b>Zone</b><br><em id="zone">Granby Row</em></span>
+      <span><b>Boost</b><br><em id="boost">Shift</em></span>
+    </section>
+    <canvas id="game" width="1100" height="600"></canvas>
+  </main>
+
+  <script>
+    const canvas = document.getElementById('game');
+    const ctx = canvas.getContext('2d');
+    const keys = {};
+    const particles = [];
+    const world = { width: 2000, height: 1200 };
+    const player = { x: 180, y: 180, vx: 0, vy: 0, cash: 3250, bbz: 250, xp: 0, level: 1, mission: 0 };
+    const camera = { x: 0, y: 0 };
+    let audioContext = null;
+    const zones = [
+      { name: 'Granby Row', x: 220, y: 190, r: 74, color: '#22c55e' },
+      { name: 'NEON Arts', x: 480, y: 260, r: 82, color: '#a855f7' },
+      { name: 'Betta Motors', x: 720, y: 210, r: 78, color: '#facc15' },
+      { name: 'BettaKarts Arena', x: 900, y: 360, r: 92, color: '#d946ef' },
+      { name: 'Ocean View', x: 620, y: 455, r: 78, color: '#38bdf8' }
+    ];
+    let coins = makeCoins();
+
+    function makeCoins() {
+      return Array.from({ length: 40 }, () => ({ x: 60 + Math.random() * (world.width - 120), y: 60 + Math.random() * (world.height - 120), on: true, spin: Math.random() * 10 }));
+    }
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(760, Math.floor(rect.width));
+      canvas.height = Math.max(420, Math.floor(rect.height));
+    }
+    addEventListener('resize', resize);
+    resize();
+
+    addEventListener('keydown', (event) => {
+      keys[event.key.toLowerCase()] = true;
+      if (event.key === 'Shift') keys.shift = true;
+    });
+    addEventListener('keyup', (event) => {
+      keys[event.key.toLowerCase()] = false;
+      if (event.key === 'Shift') keys.shift = false;
+    });
+
+    function playCoinSound() {
+      try {
+        audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
+        if (audioContext.state === 'suspended') audioContext.resume();
+        const now = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(880, now);
+        osc.frequency.exponentialRampToValueAtTime(1460, now + 0.12);
+        gain.gain.setValueAtTime(0.0001, now);
+        gain.gain.exponentialRampToValueAtTime(0.12, now + 0.015);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.16);
+        osc.connect(gain).connect(audioContext.destination);
+        osc.start(now);
+        osc.stop(now + 0.18);
+      } catch {
+        /* Sound is optional in static demo mode. */
+      }
+    }
+
+    function burst(x, y) {
+      for (let i = 0; i < 18; i++) {
+        const a = Math.random() * Math.PI * 2;
+        const s = 1 + Math.random() * 4;
+        particles.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - 1, life: 1 });
+      }
+    }
+
+    function reward(amount) {
+      player.bbz += amount;
+      player.xp += 35;
+      if (player.xp >= player.level * 500) player.level++;
+      player.mission++;
+      if (player.mission >= 3) {
+        player.cash += 750;
+        player.bbz += 25;
+        player.xp += 180;
+        player.mission = 0;
+      }
+      cash.textContent = player.cash.toLocaleString();
+      bbz.textContent = player.bbz;
+      mission.textContent = player.mission;
+      level.textContent = player.level;
+      xp.textContent = player.xp;
+      playCoinSound();
+    }
+
+    function loop() {
+      requestAnimationFrame(loop);
+      const dx = (keys.d || keys.arrowright ? 1 : 0) - (keys.a || keys.arrowleft ? 1 : 0);
+      const dy = (keys.s || keys.arrowdown ? 1 : 0) - (keys.w || keys.arrowup ? 1 : 0);
+      const len = Math.hypot(dx, dy) || 1;
+      const boostOn = !!keys.shift;
+      const accel = boostOn ? 0.68 : 0.42;
+      const maxSpeed = boostOn ? 9.5 : 6.2;
+      player.vx += (dx / len) * accel;
+      player.vy += (dy / len) * accel;
+      player.vx *= 0.91;
+      player.vy *= 0.91;
+      const speed = Math.hypot(player.vx, player.vy);
+      if (speed > maxSpeed) {
+        player.vx = player.vx / speed * maxSpeed;
+        player.vy = player.vy / speed * maxSpeed;
+      }
+      player.x = Math.max(20, Math.min(world.width - 20, player.x + player.vx));
+      player.y = Math.max(20, Math.min(world.height - 20, player.y + player.vy));
+      boost.textContent = boostOn ? 'Active' : 'Shift';
+      camera.x += (player.x - canvas.width / 2 - camera.x) * 0.12;
+      camera.y += (player.y - canvas.height / 2 - camera.y) * 0.12;
+
+      ctx.globalAlpha = 0.16;
+      ctx.fillStyle = '#020617';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.globalAlpha = 1;
+      ctx.save();
+      ctx.translate(-camera.x, -camera.y);
+      ctx.strokeStyle = 'rgba(34,211,238,.08)';
+      for (let x = 0; x < world.width; x += 100) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, world.height);
+        ctx.stroke();
+      }
+      for (let y = 0; y < world.height; y += 100) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(world.width, y);
+        ctx.stroke();
+      }
+
+      let nearest = zones[0];
+      for (const z of zones) {
+        const distance = Math.hypot(player.x - z.x, player.y - z.y);
+        if (distance < Math.hypot(player.x - nearest.x, player.y - nearest.y)) nearest = z;
+        ctx.strokeStyle = z.color;
+        ctx.shadowColor = z.color;
+        ctx.shadowBlur = 12;
+        ctx.beginPath();
+        ctx.arc(z.x, z.y, z.r, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+        ctx.fillStyle = '#e2e8f0';
+        ctx.fillText(z.name, z.x, z.y);
+      }
+      zone.textContent = nearest.name;
+
+      let remaining = 0;
+      for (const coin of coins) {
+        if (!coin.on) continue;
+        remaining++;
+        coin.spin += 0.08;
+        ctx.fillStyle = '#facc15';
+        ctx.beginPath();
+        ctx.ellipse(coin.x, coin.y, 7 + Math.sin(coin.spin) * 2, 9, 0, 0, Math.PI * 2);
+        ctx.fill();
+        if (Math.hypot(player.x - coin.x, player.y - coin.y) < 20) {
+          coin.on = false;
+          burst(coin.x, coin.y);
+          reward(10);
+          coin.x = 60 + Math.random() * (world.width - 120);
+          coin.y = 60 + Math.random() * (world.height - 120);
+          coin.on = true;
+        }
+      }
+      if (remaining === 0) coins = makeCoins();
+
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.05;
+        p.life *= 0.95;
+        ctx.globalAlpha = p.life;
+        ctx.fillStyle = '#facc15';
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+        ctx.fill();
+        if (p.life < 0.05) particles.splice(i, 1);
+      }
+      ctx.globalAlpha = 1;
+
+      const moving = Math.abs(dx) + Math.abs(dy) > 0;
+      const frame = moving ? Math.floor(performance.now() / 160) % 2 : 0;
+      ctx.fillStyle = '#38bdf8';
+      ctx.beginPath();
+      ctx.arc(player.x, player.y, 14, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = frame ? '#facc15' : '#ffffff';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(player.x - 9, player.y + 14);
+      ctx.lineTo(player.x - (frame ? 15 : 7), player.y + 25);
+      ctx.moveTo(player.x + 9, player.y + 14);
+      ctx.lineTo(player.x + (frame ? 7 : 15), player.y + 25);
+      ctx.stroke();
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText('Player', player.x, player.y - 24);
+      ctx.restore();
+    }
+    loop();
+  </script>
+</body>
+</html>

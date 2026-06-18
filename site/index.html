@@ -3,9 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BettaDayz RP — BettaBukz Edition</title>
-  <meta name="description" content="BettaDayz RP first public website and playable GitHub Pages demo." />
+  <title>BettaDayz RP - BettaBukz Edition</title>
+  <meta name="description" content="BettaDayz RP multiplayer roleplay platform with jobs, missions, dealership, BettaBukz, races, and a static web demo." />
   <link rel="stylesheet" href="./styles.css" />
+  <style>
+    .hero { min-height: 88vh; background: linear-gradient(90deg, rgba(2,6,23,.86), rgba(2,6,23,.36)), url("./assets/branding/bettakarts.jpeg") center/cover; }
+    .hero-grid { min-height: calc(88vh - 78px); display: grid; align-content: center; max-width: 1120px; margin: auto; padding: 0 24px 56px; }
+    .hero-grid img { display: none; }
+    .hero-copy { max-width: 720px; }
+    .feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+    .feature-list article { border: 1px solid rgba(34,211,238,.18); border-radius: 8px; padding: 18px; background: rgba(2,6,23,.72); }
+    .roadmap { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .roadmap span { border: 1px solid rgba(250,204,21,.22); border-radius: 8px; padding: 12px; color: #f8fafc; background: rgba(15,23,42,.7); }
+  </style>
 </head>
 <body>
   <header class="hero">
@@ -17,42 +27,70 @@
       <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
     </nav>
     <section class="hero-grid">
-      <div>
-        <p class="eyebrow">First Website Version + First Public Game Demo</p>
-        <h1>BettaDayz RP: BettaBukz Edition</h1>
-        <p class="lead">A Norfolk-inspired RP game concept with BettaBukz, VIP tiers, vehicles, housing, pets, daily rewards, and BettaKarts luxury arena racing.</p>
+      <div class="hero-copy">
+        <p class="eyebrow">Multiplayer RP Platform + BettaBukz Economy</p>
+        <h1>BettaDayz RP</h1>
+        <p class="lead">A Norfolk-inspired online roleplay city with jobs, missions, dealership progression, premium BettaBukz rewards, admin tools, map editing, races, and a static browser demo for GitHub Pages.</p>
         <div class="actions">
           <a class="button primary" href="./play-demo.html">Launch Web Demo</a>
-          <a class="button" href="./setup.html">Set Up Full Game</a>
+          <a class="button" href="./setup.html">Run Full Server</a>
         </div>
       </div>
-      <img src="./assets/branding/bettakarts.jpeg" alt="BettaKarts luxury arena racing poster" />
     </section>
   </header>
+
   <main>
     <section class="stats">
+      <article><b>3</b><span>Starter Jobs</span></article>
+      <article><b>3/3</b><span>Mission Loop</span></article>
       <article><b>100</b><span>Vehicles</span></article>
-      <article><b>50</b><span>Homes</span></article>
-      <article><b>20</b><span>Shops</span></article>
-      <article><b>30</b><span>Pets</span></article>
-      <article><b>20</b><span>Exclusive Items</span></article>
-      <article><b>6</b><span>Member Tiers</span></article>
+      <article><b>10</b><span>Leaderboard Slots</span></article>
+      <article><b>500</b><span>XP Per Level</span></article>
+      <article><b>60fps</b><span>Canvas Target</span></article>
     </section>
+
+    <section class="cards feature-list">
+      <article>
+        <h2>GTA-Style Jobs</h2>
+        <p>Taxi, police, and delivery work reward cash, BettaBukz, and XP while persisting player job state on the server.</p>
+      </article>
+      <article>
+        <h2>Progression + Missions</h2>
+        <p>Players level every 500 XP, complete the starter 3-activity mission, and loop back into fresh goals with rewards.</p>
+      </article>
+      <article>
+        <h2>Dealership + Garage</h2>
+        <p>Vehicles can be bought with validated cash or BBZ prices and are saved into each player garage.</p>
+      </article>
+      <article>
+        <h2>Live RP Systems</h2>
+        <p>Leaderboard API, role-based admin actions, map editor zones, anti-cheat checks, and proximity voice signaling are ready for expansion.</p>
+      </article>
+      <article>
+        <h2>BettaBukz Economy</h2>
+        <p>Daily rewards, jobs, races, mission bonuses, earning caps, and an inflation-control placeholder create monetization-ready structure.</p>
+      </article>
+      <article>
+        <h2>Mobile-Ready UI</h2>
+        <p>The console-style HUD, minimap, particles, wallet animation, and smooth camera are designed for a responsive web canvas.</p>
+      </article>
+    </section>
+
     <section class="cards">
       <article>
-        <h2>BettaBukz Currency</h2>
-        <p>Earn BBZ from daily rewards and races, then spend BBZ on exclusive tiers, arena upgrades, pets, housing upgrades, and premium items.</p>
-      </article>
-      <article>
-        <h2>VIP / Vehicles / Housing / Pets</h2>
-        <p>The uploaded VIP category mockup is now turned into a structured catalog system for the full game and a browseable preview for the website.</p>
-      </article>
-      <article>
-        <h2>BettaKarts Arena</h2>
-        <p>The uploaded BettaKarts arena image inspired the racing zone, queue system, arena rewards, exclusive garages, and race track list.</p>
+        <h2>Platform Roadmap</h2>
+        <div class="roadmap">
+          <span>Cloud deployable Node server</span>
+          <span>Expandable content JSON</span>
+          <span>Admin moderation hooks</span>
+          <span>Premium catalog sinks</span>
+          <span>Static Pages demo</span>
+          <span>Full multiplayer city loop</span>
+        </div>
       </article>
     </section>
   </main>
-  <footer>© BettaDayz RP — Website v1. Built for GitHub Pages.</footer>
+
+  <footer>© BettaDayz RP - RP platform preview for GitHub Pages.</footer>
 </body>
 </html>

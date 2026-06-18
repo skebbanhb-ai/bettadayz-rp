@@ -3742,5 +3742,100 @@
       "requiredClass": "custom",
       "laps": 3
     }
-  ]
+  ],
+  "jobs": [
+    {
+      "id": "taxi",
+      "name": "Taxi Driver",
+      "description": "Pick up riders and move between city zones.",
+      "cashReward": 360,
+      "bettabukzReward": 6,
+      "xpReward": 90,
+      "durationMs": 30000
+    },
+    {
+      "id": "police",
+      "name": "Police Patrol",
+      "description": "Patrol districts, respond to calls, and keep the city calm.",
+      "cashReward": 460,
+      "bettabukzReward": 8,
+      "xpReward": 110,
+      "durationMs": 35000
+    },
+    {
+      "id": "delivery",
+      "name": "Delivery Runner",
+      "description": "Move packages between shops and apartments.",
+      "cashReward": 300,
+      "bettabukzReward": 5,
+      "xpReward": 75,
+      "durationMs": 25000
+    }
+  ],
+  "missions": [
+    {
+      "id": "starter_activities",
+      "name": "Street Starter",
+      "description": "Complete any 3 activities, jobs, purchases, dailies, or races.",
+      "target": 3,
+      "cashReward": 750,
+      "bettabukzReward": 25,
+      "xpReward": 180,
+      "resetOnComplete": true
+    }
+  ],
+  "dealerships": [
+    {
+      "id": "betta_motors",
+      "name": "Betta Motors",
+      "zoneId": "dealership",
+      "currencyModes": [
+        "cash",
+        "bettabukz"
+      ],
+      "featuredVehicleIds": [
+        "car_001",
+        "car_002",
+        "car_003",
+        "car_004",
+        "car_005",
+        "car_006",
+        "car_007",
+        "car_008",
+        "car_009",
+        "car_010",
+        "car_011",
+        "car_012"
+      ]
+    }
+  ],
+  "progression": {
+    "xpPerLevel": 500,
+    "tierBonuses": {
+      "free": {
+        "xpBoostPct": 0,
+        "cashBoostPct": 0
+      },
+      "bronze": {
+        "xpBoostPct": 5,
+        "cashBoostPct": 5
+      },
+      "silver": {
+        "xpBoostPct": 8,
+        "cashBoostPct": 10
+      },
+      "gold": {
+        "xpBoostPct": 12,
+        "cashBoostPct": 15
+      },
+      "platinum": {
+        "xpBoostPct": 18,
+        "cashBoostPct": 22
+      },
+      "founder": {
+        "xpBoostPct": 25,
+        "cashBoostPct": 30
+      }
+    }
+  }
 }
