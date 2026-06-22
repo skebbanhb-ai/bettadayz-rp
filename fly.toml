@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for bettadayz-rp on 2026-06-20T03:10:19Z
+# fly.toml app configuration file generated for bettadayz-rpvol1 on 2026-06-22T23:52:04Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'bettadayz-rp'
+app = 'bettadayz-rpvol1'
 primary_region = 'iad'
 
 [build]
